@@ -160,8 +160,6 @@
       var repeat = spam ? 10 : 1;
       for (var i = 0; i < repeat; i++) {
         Telegram.WebApp.sendData(text);
-        console.log("sended_maybe");
-        alert("sended text. Maybe");
       }
     }
 
@@ -169,12 +167,10 @@
       var repeat = spam ? 10 : 1;
       for (var i = 0; i < repeat; i++) {
         Telegram.WebApp.sendData(new Date().toString());
-        alert("sended time Maybe");
       }
     }
     function sendHello() {
       Telegram.WebApp.sendData("Hello_World");
-      alert("sended hello. Maybe");
     }
 
     function webviewExpand() {
