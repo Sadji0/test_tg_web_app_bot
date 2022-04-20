@@ -29,6 +29,8 @@
     <textarea id="text_field" rows="4"></textarea>
     <button id="data_btn" onclick="sendText(true);">Send text to bot (x10)</button>
     <button onclick="webviewExpand();">Expand Webview</button>
+    <button onclick="sendHello();">Send Hello</button>
+    <button id="data_btn" onclick="sendTime(true);">Send current time to bot (x10)</button>
     <button onclick="toggleMainButton(this);">Hide Main Button</button>
     <input type="file">
     <div id="btn_status" class="hint" style="display: none;">
@@ -158,14 +160,23 @@
       var repeat = spam ? 10 : 1;
       for (var i = 0; i < repeat; i++) {
         Telegram.WebApp.sendData(text);
+        console.log("sended_maybe");
+        alert("sended text. Maybe");
       }
     }
+
     function sendTime(spam) {
       var repeat = spam ? 10 : 1;
       for (var i = 0; i < repeat; i++) {
         Telegram.WebApp.sendData(new Date().toString());
+        alert("sended time Maybe");
       }
     }
+    function sendHello() {
+      Telegram.WebApp.sendData("Hello_World");
+      alert("sended hello. Maybe");
+    }
+
     function webviewExpand() {
       Telegram.WebApp.expand();
     }
@@ -263,9 +274,5 @@
 
 
   </script>
-
-
-  <!-- page generated in 1.13ms -->
 </body>
-
 </html>
