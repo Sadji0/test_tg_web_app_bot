@@ -30,6 +30,7 @@
     <button id="data_btn" onclick="sendText(true);">Send text to bot (x10)</button>
     <button onclick="webviewExpand();">Expand Webview</button>
     <button onclick="sendHello();">Send Hello</button>
+    <button onclick="sendDataToSalebot();">Get test msg</button>
     <button id="data_btn" onclick="sendTime(true);">Send current time to bot (x10)</button>
     <button onclick="toggleMainButton(this);">Hide Main Button</button>
     <input type="file">
@@ -37,10 +38,9 @@
     </div>
     <p>Test links:</p>
     <ul>
-      <li><a id="regular_link" href="https://webappcontent.telegram.org/demo?nextpage=1">Regular link #1</a> (opens
-        inside webview)</li>
-      <li><a id="regular_link" href="https://sadji0.github.io/test_tg_web_app_bot/DurgerKingBot.html?mode=menu">DurgerKingBot</a> (opens
-        inside webview)</li>
+      <!-- <li><a id="regular_link" href="https://webappcontent.telegram.org/demo?nextpage=1">Regular link #1</a> (opens inside webview)</li> -->
+      <li><a id="regular_link"
+          href="https://sadji0.github.io/test_tg_web_app_bot/DurgerKingBot.html?mode=menu">DurgerKingBot</a> (opens inside webview)</li>
       <li><a href="https://telegram.org/" target="_blank">target="_blank" link</a> (opens outside webview)</li>
       <li><a href="javascript:window.open(&#39;https://telegram.org/&#39;);">window.open() link</a> (opens outside
         webview)</li>
@@ -72,6 +72,39 @@
 
     var initData = Telegram.WebApp.initData || '';
     var initDataUnsafe = Telegram.WebApp.initDataUnsafe || {};
+
+    /* Данная функция создаёт кроссбраузерный объект XMLHTTP */
+    function getXmlHttp() {
+      var xmlhttp;
+      try {
+        xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+      } catch (e) {
+        try {
+          xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        } catch (E) {
+          xmlhttp = false;
+        }
+      }
+      if (!xmlhttp && typeof XMLHttpRequest != 'undefined') {
+        xmlhttp = new XMLHttpRequest();
+      }
+      return xmlhttp;
+    }
+
+    function sendDataToSalebot() {
+      var xmlhttp = getXmlHttp(); // Создаём объект XMLHTTP
+      xmlhttp.open('POST', 'https://chatter.salebot.pro/api/cab68744c159b80b214509ae5c79133b/tg_callback', true); // Открываем асинхронное соединение
+      xmlhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); // Отправляем кодировку
+      // xmlhttp.send("a=" + encodeURIComponent(a) + "&b=" + encodeURIComponent(b)); // Отправляем POST-запрос
+      xmlhttp.send("?group_id=MihailRequestsInfoBot&user_id=663044964&message=test&my_callback_action=send_message");
+      xmlhttp.onreadystatechange = function() { // Ждём ответа от сервера
+        if (xmlhttp.readyState == 4) { // Ответ пришёл
+          if(xmlhttp.status == 200) { // Сервер вернул код 200 (что хорошо)
+            document.getElementById("summa").innerHTML = xmlhttp.responseText; // Выводим ответ сервера
+          }
+        }
+      };
+    }
 
     function sendMessage(msg_id, with_webview) {
       if (!initDataUnsafe.query_id) {
@@ -273,4 +306,5 @@
 
   </script>
 </body>
+
 </html>
