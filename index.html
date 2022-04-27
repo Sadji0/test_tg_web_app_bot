@@ -96,7 +96,7 @@
       xmlhttp.open('POST', 'https://chatter.salebot.pro/api/cab68744c159b80b214509ae5c79133b/tg_callback', true); // Открываем асинхронное соединение
       xmlhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded'); // Отправляем кодировку
       // xmlhttp.send("a=" + encodeURIComponent(a) + "&b=" + encodeURIComponent(b)); // Отправляем POST-запрос
-      xmlhttp.send("?group_id=MihailRequestsInfoBot&user_id=663044964&message=test&my_callback_action=send_message");
+      xmlhttp.send("group_id=MihailRequestsInfoBot&user_id=663044964&message=test&my_callback_action=send_message");
       xmlhttp.onreadystatechange = function() { // Ждём ответа от сервера
         if (xmlhttp.readyState == 4) { // Ответ пришёл
           if(xmlhttp.status == 200) { // Сервер вернул код 200 (что хорошо)
