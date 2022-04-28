@@ -16,13 +16,13 @@ var Cafe = {
     Cafe.userHash = options.userHash;
     Cafe.initLotties();
     $('body').show();
-    if (!Telegram.WebApp.initDataUnsafe ||
-      !Telegram.WebApp.initDataUnsafe.query_id) {
-      Cafe.isClosed = true;
-      $('body').addClass('closed');
-      Cafe.showStatus('Cafe is temporarily closed');
-      return;
-    }
+    // if (!Telegram.WebApp.initDataUnsafe ||
+    //   !Telegram.WebApp.initDataUnsafe.query_id) {
+    //   Cafe.isClosed = true;
+    //   $('body').addClass('closed');
+    //   Cafe.showStatus('Cafe is temporarily closed');
+    //   return;
+    // }
     $('.js-item-lottie').on('click', Cafe.eLottieClicked);
     $('.js-item-incr-btn').on('click', Cafe.eIncrClicked);
     $('.js-item-decr-btn').on('click', Cafe.eDecrClicked);
