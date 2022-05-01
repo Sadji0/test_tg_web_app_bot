@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0051)https://webappcontent.telegram.org/demo?mode=simple -->
 <html class="light" style="--tg-viewport-height:100vh; --tg-viewport-stable-height:100vh;">
 
 <head>
@@ -26,42 +25,40 @@
 
 <body style="">
   <section>
+    <h1 id="hello_message">Привет, Имя</h1>
+    <h3>Твой счет: 0 кат</h3>
+    <h4>Что бы вы хотели сделать?</h4>
+
     <textarea id="text_field" rows="4"></textarea>
-    <button id="data_btn" onclick="sendText(true);">Send text to bot (x10)</button>
-    <button onclick="webviewExpand();">Expand Webview</button>
-    <button onclick="sendHello();">Send Hello</button>
-    <button onclick="sendDataToSalebot();">Get test msg</button>
-    <button id="data_btn" onclick="sendTime(true);">Send current time to bot (x10)</button>
-    <button onclick="toggleMainButton(this);">Hide Main Button</button>
+    <button id="data_btn" onclick="sendText(true);">Отправить своё сообщение (10 кат)</button>
+    <button onclick="sendHello();">Отправить приветствие (5 кат)</button>
+    <button onclick="sendDataToSalebot('send_data','test_message',initDataUnsafe.user.id);">Отправить тестовое сообщение</button>
+    <button id="data_btn" onclick="sendTime();">Отправка текущего времени (5 кат)</button>
+    <button onclick="toggleMainButton(this);">Скрыть главную кнопку</button>
     <input type="file">
     <div id="btn_status" class="hint" style="display: none;">
     </div>
     <p>Test links:</p>
     <ul>
       <!-- <li><a id="regular_link" href="https://webappcontent.telegram.org/demo?nextpage=1">Regular link #1</a> (opens inside webview)</li> -->
-      <li><a id="regular_link"
-          href="https://sadji0.github.io/test_tg_web_app_bot/DurgerKingBot.html?mode=menu">DurgerKingBot</a> (opens inside webview)</li>
-      <li><a href="https://telegram.org/" target="_blank">target="_blank" link</a> (opens outside webview)</li>
-      <li><a href="javascript:window.open(&#39;https://telegram.org/&#39;);">window.open() link</a> (opens outside
+      <li><a href="https://t.me/mihail_plavko" target="_blank">открыть сообщения создателя</a></li>
+      <li><a href="javascript:window.open(&#39;https://t.me/mihail_plavko/&#39;);">window.open() link</a> (opens outside
         webview)</li>
-      <li><a href="https://t.me/like">LikeBot t.me link</a> (opens inside Telegram app)</li>
-      <li><a href="tg://resolve?domain=vote">VoteBot tg:// link</a> (does not open)</li>
     </ul>
-    <p>Test permissions:</p>
+    <p>Тесты на разрешение:</p>
     <ul>
       <li><a href="javascript:;" onclick="return requestLocation(this);">Request Location</a> <span></span></li>
       <li><a href="javascript:;" onclick="return requestVideo(this);">Request Video</a> <span></span></li>
-      <li><a href="javascript:;" onclick="return requestAudio(this);">Request Audio</a> <span></span></li>
     </ul>
+    <div class="hint">
+      Параметры данных
+    </div>
     <pre><code id="webview_data">{}</code></pre>
     <div class="hint">
-      Data passed to webview.
-      <span id="webview_data_status" style="display: none;">Checking hash...</span>
+      Параметры данных темы
     </div>
     <pre><code id="theme_data">{}</code></pre>
-    <div class="hint">
-      Theme params
-    </div>
+    
   </section>
   <div class="viewport_border" text="1536 x 711"></div>
   <div class="viewport_stable_border" text="1536 x 711 | is_expanded: true"></div>
@@ -73,74 +70,17 @@
     var initData = Telegram.WebApp.initData || '';
     var initDataUnsafe = Telegram.WebApp.initDataUnsafe || {};
 
-    function sendDataToSalebot(user_id="663044964", message_is_action="send_data", website_msg_data="test_message") {
-      fetch("https://chatter.salebot.pro/api/8c6ee4f533e8b575c30f9123aaed0c60/tg_callback?group_id=MihailRequestsInfoBot&user_id="+String(user_id)+"&message="+String(message_is_action)+"&website_msg_data="+String(website_msg_data));
+    if (!initDataUnsafe.user) {
+      document.body.innerHTML='';
+      document.head.innerHTML='';
     }
 
-    function sendMessage(msg_id, with_webview) {
-      if (!initDataUnsafe.query_id) {
-        alert('WebViewQueryId not defined');
-        return;
-      }
-      $('button').prop('disabled', true);
-      $('#btn_status').text('Sending...').removeClass('ok err').show();
-      $.ajax('/demo/sendMessage', {
-        type: 'POST',
-        data: { _auth: initData, msg_id: msg_id || '', with_webview: !initDataUnsafe.receiver && with_webview ? 1 : 0 },
-        dataType: 'json',
-        success: function (result) {
-          $('button').prop('disabled', false);
-          if (result.response) {
-            if (result.response.ok) {
-              $('#btn_status').html('Message sent successfully!').addClass('ok').show();
-            } else {
-              $('#btn_status').text(result.response.description).addClass('err').show();
-              alert(result.response.description);
-            }
-          } else {
-            $('#btn_status').text('Unknown error').addClass('err').show();
-            alert('Unknown error');
-          }
-        },
-        error: function (xhr) {
-          $('button').prop('disabled', false);
-          $('#btn_status').text('Server error').addClass('err').show();
-          alert('Server error');
-        }
-      });
+    document.getElementById("hello_message").innerHTML= `Привет, ${initDataUnsafe.user.first_name}`;
+
+    function sendDataToSalebot(message_as_action="send_data", website_msg_data="test_message", user_id="663044964") {
+      fetch("https://chatter.salebot.pro/api/8c6ee4f533e8b575c30f9123aaed0c60/tg_callback?group_id=MihailRequestsInfoBot&user_id="+String(user_id)+"&message="+String(message_as_action)+"&website_msg_data="+String(website_msg_data));
     }
-    function changeButton() {
-      $('button').prop('disabled', true);
-      $('#btn_status').text('Changing button...').removeClass('ok err').show();
-      $.ajax('/demo/changeMenuButton', {
-        type: 'POST',
-        data: { _auth: initData },
-        dataType: 'json',
-        success: function (result) {
-          $('button').prop('disabled', false);
-          if (result.response) {
-            if (result.response.ok) {
-              $('#btn_status').html('Button changed!').addClass('ok').show();
-              Telegram.WebApp.close();
-            } else {
-              $('#btn_status').text(result.response.description).addClass('err').show();
-              alert(result.response.description);
-            }
-          } else {
-            $('#btn_status').text('Unknown error').addClass('err').show();
-            alert('Unknown error');
-          }
-        },
-        error: function (xhr) {
-          $('button').prop('disabled', false);
-          $('#btn_status').text('Server error').addClass('err').show();
-          alert('Server error');
-        }
-      });
-      setTimeout(function () {
-        Telegram.WebApp.close();
-      }, 50);
-    }
+    
     function byteLength(str) {
       if (window.Blob) {
         try { return new Blob([str]).size; } catch (e) { }
@@ -163,28 +103,29 @@
       if (byteLength(text) > 4096) {
         return alert('Text is too long');
       }
-      var repeat = spam ? 10 : 1;
-      for (var i = 0; i < repeat; i++) {
-        Telegram.WebApp.sendData(text);
-      }
+      // var repeat = spam ? 10 : 1;
+      // for (var i = 0; i < repeat; i++) {
+      //   Telegram.WebApp.sendData(text);
+      // }
+      sendDataToSalebot("send_message", text, initDataUnsafe.user.id);
     }
 
-    function sendTime(spam) {
-      var repeat = spam ? 10 : 1;
-      for (var i = 0; i < repeat; i++) {
-        Telegram.WebApp.sendData(new Date().toString());
-      }
+    function sendTime() {
+      // var repeat = spam ? 10 : 1;
+      // for (var i = 0; i < repeat; i++) {
+      //   Telegram.WebApp.sendData(new Date().toString());
+      // }
+      sendDataToSalebot("send_message", new Date().toString(), initDataUnsafe.user.id);
     }
     function sendHello() {
-      Telegram.WebApp.sendData("Hello_World");
+      // Telegram.WebApp.sendData("Hello_World");
+      sendDataToSalebot("send_message", "Hello_World", initDataUnsafe.user.id);
     }
 
-    function webviewExpand() {
-      Telegram.WebApp.expand();
-    }
     function webviewClose() {
       Telegram.WebApp.close();
     }
+
     function requestLocation(el) {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
@@ -205,46 +146,16 @@
       }
       return false;
     }
-    function requestAudio(el) {
-      if (navigator.mediaDevices) {
-        navigator.mediaDevices.getUserMedia({ audio: true, video: false }).then(function (stream) {
-          $(el).next('span').html('(Access granted)').attr('class', 'ok');
-        });
-      } else {
-        $(el).next('span').html('Media devices is not supported in this browser.').attr('class', 'err');
-      }
-      return false;
-    }
 
     Telegram.WebApp.onEvent('themeChanged', function () {
       $('#theme_data').html(JSON.stringify(Telegram.WebApp.themeParams, null, 2));
     });
 
-    $('#main_btn').toggle(!!initDataUnsafe.query_id);
-    $('#with_webview_btn').toggle(!!initDataUnsafe.query_id && !initDataUnsafe.receiver);
-    // $('#data_btn').toggle(!initDataUnsafe.query_id || !initDataUnsafe.receiver);
     $('#webview_data').html(JSON.stringify(initDataUnsafe, null, 2));
     $('#theme_data').html(JSON.stringify(Telegram.WebApp.themeParams, null, 2));
     $('#regular_link').attr('href', $('#regular_link').attr('href') + location.hash);
     $('#text_field').focus();
-    if (initDataUnsafe.query_id && initData) {
-      $('#webview_data_status').show();
-      $.ajax('/demo/checkData', {
-        type: 'POST',
-        data: { _auth: initData },
-        dataType: 'json',
-        success: function (result) {
-          if (result.ok) {
-            $('#webview_data_status').html('Hash is correct').addClass('ok');
-          } else {
-            $('#webview_data_status').html(result.error).addClass('err');
-          }
-        },
-        error: function (xhr) {
-          $('#webview_data_status').html('Server error').addClass('err');
-        }
-      });
-    }
+
     $('body').css('visibility', '');
     Telegram.WebApp.MainButton
       .setText('CLOSE WEBVIEW')
@@ -255,10 +166,10 @@
       var mainButton = Telegram.WebApp.MainButton;
       if (mainButton.isVisible) {
         mainButton.hide();
-        el.innerHTML = 'Show Main Button';
+        el.innerHTML = 'Показать главную кнопку';
       } else {
         mainButton.show();
-        el.innerHTML = 'Hide Main Button';
+        el.innerHTML = 'Скрыть главную кнопку';
       }
     }
 
