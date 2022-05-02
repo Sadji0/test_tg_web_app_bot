@@ -35,33 +35,22 @@
     <button onclick="sendDataToSalebot('send_data','test_message',initDataUnsafe.user.id);">Отправить тестовое сообщение</button>
     <button id="data_btn" onclick="sendTime();">Отправка текущего времени (5 кат)</button>
     <button onclick="toggleMainButton(this);">Скрыть главную кнопку</button>
-    <input type="file">
     <div id="btn_status" class="hint" style="display: none;">
     </div>
-    <p>Test links:</p>
+    <p>Тестовые ссылки:</p>
     <ul>
       <!-- <li><a id="regular_link" href="https://webappcontent.telegram.org/demo?nextpage=1">Regular link #1</a> (opens inside webview)</li> -->
-      <li><a href="https://t.me/mihail_plavko" target="_blank">открыть сообщения создателя</a></li>
-      <li><a href="javascript:window.open(&#39;https://t.me/mihail_plavko/&#39;);">window.open() link</a> (opens outside
-        webview)</li>
+      <li><a href="https://t.me/mihail_plavko" target="_blank">открыть личные сообщения</a></li>
     </ul>
     <p>Тесты на разрешение:</p>
     <ul>
       <li><a href="javascript:;" onclick="return requestLocation(this);">Request Location</a> <span></span></li>
       <li><a href="javascript:;" onclick="return requestVideo(this);">Request Video</a> <span></span></li>
     </ul>
-    <div class="hint">
-      Параметры данных
-    </div>
-    <pre><code id="webview_data">{}</code></pre>
-    <div class="hint">
-      Параметры данных темы
-    </div>
-    <pre><code id="theme_data">{}</code></pre>
     
   </section>
-  <div class="viewport_border" text="1536 x 711"></div>
-  <div class="viewport_stable_border" text="1536 x 711 | is_expanded: true"></div>
+  <!-- <div class="viewport_border" text="1536 x 711"></div> -->
+  <!-- <div class="viewport_stable_border" text="1536 x 711 | is_expanded: true"></div> -->
 
   <script src="js/jquery.min.js"></script>
   <script>
@@ -122,27 +111,23 @@
       sendDataToSalebot("send_message", "Hello_World", initDataUnsafe.user.id);
     }
 
-    function webviewClose() {
-      Telegram.WebApp.close();
-    }
-
     function requestLocation(el) {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
           $(el).next('span').html('(' + position.coords.latitude + ', ' + position.coords.longitude + ')').attr('class', 'ok');
         });
       } else {
-        $(el).next('span').html('Geolocation is not supported in this browser.').attr('class', 'err');
+        $(el).next('span').html('Геолокация не поддерживается в вашем браузере.').attr('class', 'err');
       }
       return false;
     }
     function requestVideo(el) {
       if (navigator.mediaDevices) {
         navigator.mediaDevices.getUserMedia({ audio: false, video: true }).then(function (stream) {
-          $(el).next('span').html('(Access granted)').attr('class', 'ok');
+          $(el).next('span').html('(Доступ предоставлен)').attr('class', 'ok');
         });
       } else {
-        $(el).next('span').html('Media devices is not supported in this browser.').attr('class', 'err');
+        $(el).next('span').html('Видео не поддержкивается в вашем браузере.').attr('class', 'err');
       }
       return false;
     }
@@ -151,16 +136,18 @@
       $('#theme_data').html(JSON.stringify(Telegram.WebApp.themeParams, null, 2));
     });
 
-    $('#webview_data').html(JSON.stringify(initDataUnsafe, null, 2));
-    $('#theme_data').html(JSON.stringify(Telegram.WebApp.themeParams, null, 2));
     $('#regular_link').attr('href', $('#regular_link').attr('href') + location.hash);
     $('#text_field').focus();
 
     $('body').css('visibility', '');
     Telegram.WebApp.MainButton
-      .setText('CLOSE WEBVIEW')
+      .setText('Закрыть окно')
       .show()
       .onClick(function () { webviewClose(); });
+
+    function webviewClose() {
+      Telegram.WebApp.close();
+    }
 
     function toggleMainButton(el) {
       var mainButton = Telegram.WebApp.MainButton;
@@ -173,17 +160,17 @@
       }
     }
 
-    function round(val, d) {
-      var k = Math.pow(10, d || 0);
-      return Math.round(val * k) / k;
-    }
+    // function round(val, d) {
+    //   var k = Math.pow(10, d || 0);
+    //   return Math.round(val * k) / k;
+    // }
 
-    function setViewportData() {
-      $('.viewport_border').attr('text', window.innerWidth + ' x ' + round(Telegram.WebApp.viewportHeight, 2));
-      $('.viewport_stable_border').attr('text', window.innerWidth + ' x ' + round(Telegram.WebApp.viewportStableHeight, 2) + ' | is_expanded: ' + (Telegram.WebApp.isExpanded ? 'true' : 'false'));
-    }
-    Telegram.WebApp.onEvent('viewportChanged', setViewportData);
-    setViewportData();
+    // function setViewportData() {
+    //   $('.viewport_border').attr('text', window.innerWidth + ' x ' + round(Telegram.WebApp.viewportHeight, 2));
+    //   $('.viewport_stable_border').attr('text', window.innerWidth + ' x ' + round(Telegram.WebApp.viewportStableHeight, 2) + ' | is_expanded: ' + (Telegram.WebApp.isExpanded ? 'true' : 'false'));
+    // }
+    // Telegram.WebApp.onEvent('viewportChanged', setViewportData);
+    // setViewportData();
 
 
   </script>
