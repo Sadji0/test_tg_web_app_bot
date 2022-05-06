@@ -26,14 +26,16 @@
 <body style="">
   <section>
     <h1 id="hello_message">Привет, Имя</h1>
-    <h3>Твой счет: 0 кат</h3>
-    <h4>Что бы вы хотели сделать?</h4>
 
-    <textarea id="text_field" rows="4"></textarea>
-    <button id="data_btn" onclick="sendText(true);">Отправить своё сообщение (10 кат)</button>
-    <button onclick="sendHello();">Отправить приветствие (5 кат)</button>
-    <button onclick="sendDataToSalebot('send_data','test_message',initDataUnsafe.user.id);">Отправить тестовое сообщение</button>
-    <button id="data_btn" onclick="sendTime();">Отправка текущего времени (5 кат)</button>
+    <div id="data_btn">
+      <h3>Твой счет: 0 кат</h3>
+      <h4>Что бы вы хотели сделать?</h4>
+      <textarea class="text_field" rows="4"></textarea>
+      <button onclick="sendText(true);">Отправить своё сообщение (10 кат)</button>
+      <button onclick="sendHello();">Отправить приветствие (5 кат)</button>
+      <button onclick="sendTestMessage();">Отправить тестовое сообщение</button>
+      <button onclick="sendTime();">Отправка текущего времени (5 кат)</button>
+    </div>
     <button onclick="toggleMainButton(this);">Скрыть главную кнопку</button>
     <div id="btn_status" class="hint" style="display: none;">
     </div>
@@ -58,16 +60,26 @@
 
     var initData = Telegram.WebApp.initData || '';
     var initDataUnsafe = Telegram.WebApp.initDataUnsafe || {};
+    var urlParams = new URLSearchParams(window.location.search);
+    var tokenSalebotProject = urlParams.get('api_token') || false;
 
     if (!initDataUnsafe.user) {
       document.body.innerHTML='';
       document.head.innerHTML='';
+    } else {
+      document.getElementById("hello_message").innerHTML= `Привет, ${initDataUnsafe.user.first_name}`;
     }
 
-    document.getElementById("hello_message").innerHTML= `Привет, ${initDataUnsafe.user.first_name}`;
+    if (!tokenSalebotProject) {
+      document.getElementById("data_btn").innerHTML='';
+    }
 
     function sendDataToSalebot(message_as_action="send_data", website_msg_data="test_message", user_id="663044964") {
-      fetch("https://chatter.salebot.pro/api/8c6ee4f533e8b575c30f9123aaed0c60/tg_callback?group_id=MihailRequestsInfoBot&user_id="+String(user_id)+"&message="+String(message_as_action)+"&website_msg_data="+String(website_msg_data));
+      fetch("https://chatter.salebot.pro/api/"+String(tokenSalebotProject)+"/tg_callback?group_id=MihailRequestsInfoBot&user_id="+String(user_id)+"&message="+String(message_as_action)+"&website_msg_data="+String(website_msg_data));
+    }
+
+    function sendTestMessage() {
+      sendDataToSalebot('send_data','test_message',initDataUnsafe.user.id);
     }
     
     function byteLength(str) {
@@ -92,22 +104,13 @@
       if (byteLength(text) > 4096) {
         return alert('Text is too long');
       }
-      // var repeat = spam ? 10 : 1;
-      // for (var i = 0; i < repeat; i++) {
-      //   Telegram.WebApp.sendData(text);
-      // }
       sendDataToSalebot("send_message", text, initDataUnsafe.user.id);
     }
 
     function sendTime() {
-      // var repeat = spam ? 10 : 1;
-      // for (var i = 0; i < repeat; i++) {
-      //   Telegram.WebApp.sendData(new Date().toString());
-      // }
       sendDataToSalebot("send_message", new Date().toString(), initDataUnsafe.user.id);
     }
     function sendHello() {
-      // Telegram.WebApp.sendData("Hello_World");
       sendDataToSalebot("send_message", "Hello_World", initDataUnsafe.user.id);
     }
 
@@ -159,19 +162,6 @@
         el.innerHTML = 'Скрыть главную кнопку';
       }
     }
-
-    // function round(val, d) {
-    //   var k = Math.pow(10, d || 0);
-    //   return Math.round(val * k) / k;
-    // }
-
-    // function setViewportData() {
-    //   $('.viewport_border').attr('text', window.innerWidth + ' x ' + round(Telegram.WebApp.viewportHeight, 2));
-    //   $('.viewport_stable_border').attr('text', window.innerWidth + ' x ' + round(Telegram.WebApp.viewportStableHeight, 2) + ' | is_expanded: ' + (Telegram.WebApp.isExpanded ? 'true' : 'false'));
-    // }
-    // Telegram.WebApp.onEvent('viewportChanged', setViewportData);
-    // setViewportData();
-
 
   </script>
 </body>
