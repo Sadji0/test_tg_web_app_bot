@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="MobileOptimized" content="176" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="robots" content="noindex, nofollow" /> -->
+  <title>Заказ</title>
+
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script>
+    function setThemeClass() {
+      document.documentElement.className = Telegram.WebApp.colorScheme;
+    }
+    Telegram.WebApp.onEvent('themeChanged', setThemeClass);
+    setThemeClass();
+  </script>
+  <link href="./css/cafe.css" rel="stylesheet">
+</head>
+
+<body style="">
+  <section class="cafe-page cafe-items">
+
+    <!-- item 1 not added -->
+    <div class="cafe-item js-item" data-item-id="1" data-item-price="4990">
+      <div class="cafe-item-counter js-item-counter">1</div>
+      <div class="cafe-item-photo">
+        <picture class="cafe-item-lottie js-item-lottie">
+          <img src="./img/cafe/Burger_148.png">
+        </picture>
+      </div>
+      <div class="cafe-item-label">
+        <span class="cafe-item-title">Burger</span>
+        <span class="cafe-item-price">$4.99</span>
+      </div>
+      <div class="cafe-item-buttons">
+        <button class="cafe-item-decr-button js-item-decr-btn button-item ripple-handler">
+          <span class="ripple-mask"><span class="ripple"></span></span>
+        </button>
+        <button class="cafe-item-incr-button js-item-incr-btn button-item ripple-handler">
+          <span class="button-item-label">Add</span>
+          <span class="ripple-mask"><span class="ripple"></span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- item 2 not added -->
+    <div class="cafe-item js-item" data-item-id="2" data-item-price="1490">
+      <div class="cafe-item-counter js-item-counter" style="animation-name: badge-hide;">1</div>
+      <div class="cafe-item-photo">
+        <picture class="cafe-item-lottie js-item-lottie">
+          <img src="./img/cafe/Fries_148.png">
+          <canvas width="148" height="148"></canvas>
+        </picture>
+      </div>
+      <div class="cafe-item-label">
+        <span class="cafe-item-title">Fries</span>
+        <span class="cafe-item-price">$1.49</span>
+      </div>
+      <div class="cafe-item-buttons">
+        <button class="cafe-item-decr-button js-item-decr-btn button-item ripple-handler">
+          <span class="ripple-mask"><span class="ripple"></span></span>
+        </button>
+        <button class="cafe-item-incr-button js-item-incr-btn button-item ripple-handler">
+          <span class="button-item-label">Add</span>
+          <span class="ripple-mask"><span class="ripple"></span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- item 3 not added -->
+    <div class="cafe-item js-item" data-item-id="3" data-item-price="3490">
+      <div class="cafe-item-counter js-item-counter">1</div>
+      <div class="cafe-item-photo">
+        <picture class="cafe-item-lottie js-item-lottie">
+          <img src="./img/cafe/Hotdog_148.png">
+        </picture>
+      </div>
+      <div class="cafe-item-label">
+        <span class="cafe-item-title">Hotdog</span>
+        <span class="cafe-item-price">$3.49</span>
+      </div>
+      <div class="cafe-item-buttons">
+        <button class="cafe-item-decr-button js-item-decr-btn button-item ripple-handler">
+          <span class="ripple-mask"><span class="ripple"></span></span>
+        </button>
+        <button class="cafe-item-incr-button js-item-incr-btn button-item ripple-handler">
+          <span class="button-item-label">Add</span>
+          <span class="ripple-mask"><span class="ripple"></span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- item 4 not added -->
+    <div class="cafe-item js-item" data-item-id="4" data-item-price="3990">
+      <div class="cafe-item-counter js-item-counter">1</div>
+      <div class="cafe-item-photo">
+        <picture class="cafe-item-lottie js-item-lottie">
+          <img src="./img/cafe/Tako_148.png">
+        </picture>
+      </div>
+      <div class="cafe-item-label">
+        <span class="cafe-item-title">Tako</span>
+        <span class="cafe-item-price">$3.99</span>
+      </div>
+      <div class="cafe-item-buttons">
+        <button class="cafe-item-decr-button js-item-decr-btn button-item ripple-handler">
+          <span class="ripple-mask"><span class="ripple"></span></span>
+        </button>
+        <button class="cafe-item-incr-button js-item-incr-btn button-item ripple-handler">
+          <span class="button-item-label">Add</span>
+          <span class="ripple-mask"><span class="ripple"></span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- item 5 not added -->
+    <div class="cafe-item js-item" data-item-id="5" data-item-price="7990">
+      <div class="cafe-item-counter js-item-counter">1</div>
+      <div class="cafe-item-photo">
+        <picture class="cafe-item-lottie js-item-lottie">
+          <source type="application/x-tgsticker" srcset="/img/cafe/Pizza.tgs">
+          <img src="./img/cafe/Pizza_148.png">
+        </picture>
+      </div>
+      <div class="cafe-item-label">
+        <span class="cafe-item-title">Pizza</span>
+        <span class="cafe-item-price">$7.99</span>
+      </div>
+      <div class="cafe-item-buttons">
+        <button class="cafe-item-decr-button js-item-decr-btn button-item ripple-handler">
+          <span class="ripple-mask"><span class="ripple"></span></span>
+        </button>
+        <button class="cafe-item-incr-button js-item-incr-btn button-item ripple-handler">
+          <span class="button-item-label">Add</span>
+          <span class="ripple-mask"><span class="ripple"></span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- item 6 not added -->
+    <div class="cafe-item js-item" data-item-id="6" data-item-price="1490">
+      <div class="cafe-item-counter js-item-counter">1</div>
+      <div class="cafe-item-photo">
+        <picture class="cafe-item-lottie js-item-lottie">
+          <source type="application/x-tgsticker" srcset="/img/cafe/Donut.tgs?1">
+          <img src="./img/cafe/Donut_148.png?1">
+        </picture>
+      </div>
+      <div class="cafe-item-label">
+        <span class="cafe-item-title">Donut</span>
+        <span class="cafe-item-price">$1.49</span>
+      </div>
+      <div class="cafe-item-buttons">
+        <button class="cafe-item-decr-button js-item-decr-btn button-item ripple-handler">
+          <span class="ripple-mask"><span class="ripple"></span></span>
+        </button>
+        <button class="cafe-item-incr-button js-item-incr-btn button-item ripple-handler">
+          <span class="button-item-label">Add</span>
+          <span class="ripple-mask"><span class="ripple"></span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="cafe-item-shadow"></div>
+    <div class="cafe-item-shadow"></div>
+    <div class="cafe-item-shadow"></div>
+    <div class="cafe-item-shadow"></div>
+  </section>
+
+  <section class="cafe-page cafe-order-overview">
+    <div class="cafe-block">
+      <div class="cafe-order-header-wrap">
+        <h2 class="cafe-order-header">Your Order</h2>
+        <span class="cafe-order-edit js-order-edit">Edit</span>
+      </div>
+      <div class="cafe-order-items">
+
+        <!-- order item 1 -->
+        <div class="cafe-order-item js-order-item selected" data-item-id="1">
+          <div class="cafe-order-item-photo">
+            <picture class="cafe-item-lottie js-item-lottie">
+
+              <img src="./img/cafe/Fries_148.png">
+            </picture>
+          </div>
+          <div class="cafe-order-item-label">
+            <div class="cafe-order-item-title">Burger <span class="cafe-order-item-counter"><span
+                  class="js-order-item-counter">1</span>x</span></div>
+            <div class="cafe-order-item-description">Meat™</div>
+          </div>
+          <div class="cafe-order-item-price js-order-item-price">$4.99</div>
+        </div>
+
+        <!-- order item 2 -->
+        <div class="cafe-order-item js-order-item" data-item-id="2">
+          <div class="cafe-order-item-photo">
+            <picture class="cafe-item-lottie js-item-lottie">
+
+              <img src="./img/cafe/Fries_148.png">
+            </picture>
+          </div>
+          <div class="cafe-order-item-label">
+            <div class="cafe-order-item-title">Fries <span class="cafe-order-item-counter"><span
+                  class="js-order-item-counter">1</span>x</span></div>
+            <div class="cafe-order-item-description">Po-ta-toes</div>
+          </div>
+          <div class="cafe-order-item-price js-order-item-price">$0.00</div>
+        </div>
+
+        <!-- order item 3 -->
+        <div class="cafe-order-item js-order-item" data-item-id="3">
+          <div class="cafe-order-item-photo">
+            <picture class="cafe-item-lottie js-item-lottie">
+
+              <img src="./img/cafe/Hotdog_148.png">
+            </picture>
+          </div>
+          <div class="cafe-order-item-label">
+            <div class="cafe-order-item-title">Hotdog <span class="cafe-order-item-counter"><span
+                  class="js-order-item-counter">1</span>x</span></div>
+            <div class="cafe-order-item-description">0% dog, 100% hot</div>
+          </div>
+          <div class="cafe-order-item-price js-order-item-price">$3.49</div>
+        </div>
+
+        <!-- order item 4 -->
+        <div class="cafe-order-item js-order-item" data-item-id="4">
+          <div class="cafe-order-item-photo">
+            <picture class="cafe-item-lottie js-item-lottie">
+
+              <img src="./img/cafe/Tako_148.png">
+            </picture>
+          </div>
+          <div class="cafe-order-item-label">
+            <div class="cafe-order-item-title">Tako <span class="cafe-order-item-counter"><span
+                  class="js-order-item-counter">1</span>x</span></div>
+            <div class="cafe-order-item-description">Mucho más</div>
+          </div>
+          <div class="cafe-order-item-price js-order-item-price">$3.99</div>
+        </div>
+
+        <!-- order item 5 -->
+        <div class="cafe-order-item js-order-item" data-item-id="5">
+          <div class="cafe-order-item-photo">
+            <picture class="cafe-item-lottie js-item-lottie">
+              
+              <img src="./img/cafe/Pizza_148.png">
+            </picture>
+          </div>
+          <div class="cafe-order-item-label">
+            <div class="cafe-order-item-title">Pizza <span class="cafe-order-item-counter"><span
+                  class="js-order-item-counter">1</span>x</span></div>
+            <div class="cafe-order-item-description">That’s amore</div>
+          </div>
+          <div class="cafe-order-item-price js-order-item-price">$7.99</div>
+        </div>
+
+        <!-- order item 6 -->
+        <div class="cafe-order-item js-order-item" data-item-id="6">
+          <div class="cafe-order-item-photo">
+            <picture class="cafe-item-lottie js-item-lottie">
+              
+              <img src="./img/cafe/Donut_148.png?1">
+            </picture>
+          </div>
+          <div class="cafe-order-item-label">
+            <div class="cafe-order-item-title">Donut <span class="cafe-order-item-counter"><span
+                  class="js-order-item-counter">1</span>x</span></div>
+            <div class="cafe-order-item-description">Hole included</div>
+          </div>
+          <div class="cafe-order-item-price js-order-item-price">$1.49</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/cafe.js?22"></script>
+  <script>Cafe.init({ "apiUrl": "\/cafe\/api", "userId": 0, "userHash": null });</script>
+</body>
+
+</html>
