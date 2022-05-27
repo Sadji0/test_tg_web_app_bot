@@ -4,6 +4,7 @@
     return this.map(function () { this.offsetTop; return this; });
   };
   console.log("ended jquery");
+  console.log(" ");
 })(jQuery);
 
 var Cafe = {
@@ -62,6 +63,8 @@ var Cafe = {
 
   eIncrClicked: function (e) {
     console.log("started eIncrClicked");
+    $(".logger").text($(".logger").text() + "eIncrClicked ");
+
     e.preventDefault();
     // Telegram.WebApp.HapticFeedback.impactOccurred('light');
     var itemEl = $(this).parents('.js-item');
@@ -71,6 +74,8 @@ var Cafe = {
 
   eDecrClicked: function (e) {
     console.log("started eDecrClicked");
+    $(".logger").text($(".logger").text() + "eDecrClicked ");
+
     e.preventDefault();
     // Telegram.WebApp.HapticFeedback.impactOccurred('light');
     var itemEl = $(this).parents('.js-item');
@@ -79,17 +84,23 @@ var Cafe = {
 
   eEditClicked: function (e) {
     console.log("started eEditClicked");
+    $(".logger").text($(".logger").text() + "eEditClicked ");
+
     e.preventDefault();
     Cafe.toggleMode(false);
   },
 
   backBtnClicked: function () {
     console.log("started backBtnClicked");
+    $(".logger").text($(".logger").text() + "backBtnClicked ");
+
     Cafe.toggleMode(false);
   },
 
   getOrderItem: function (itemEl) {
     console.log("started getOrderItem");
+    $(".logger").text($(".logger").text() + "getOrderItem ");
+
     var id = itemEl.data('item-id');
     return $('.js-order-item').filter(function () {
       return ($(this).data('item-id') == id);
@@ -98,6 +109,8 @@ var Cafe = {
 
   updateItem: function (itemEl, delta) {
     console.log("started updateItem");
+    $(".logger").text($(".logger").text() + "updateItem ");
+
     var price = +itemEl.data('item-price');
     var count = +itemEl.data('item-count') || 0;
     var counterEl = $('.js-item-counter', itemEl);
@@ -130,6 +143,8 @@ var Cafe = {
 
   incrClicked: function (itemEl, delta) {
     console.log("started incrClicked");
+    $(".logger").text($(".logger").text() + "incrClicked ");
+
     if (Cafe.isLoading || Cafe.isClosed) {
       return false;
     }
@@ -144,11 +159,15 @@ var Cafe = {
 
   formatPrice: function (price) {
     console.log("started formatPrice");
+    $(".logger").text($(".logger").text() + "formatPrice ");
+
     return '$' + Cafe.formatNumber(price / 1000, 2, '.', ',');
   },
 
   formatNumber: function (number, decimals, decPoint, thousandsSep) {
     console.log("started formatNumber");
+    $(".logger").text($(".logger").text() + "formatNumber ");
+
     number = (number + '').replace(/[^0-9+\-Ee.]/g, '')
     var n = !isFinite(+number) ? 0 : +number
     var prec = !isFinite(+decimals) ? 0 : Math.abs(decimals)
@@ -180,6 +199,8 @@ var Cafe = {
 
   updateBackgroundColor: function () {
     console.log("started updateBackgroundColor");
+    $(".logger").text($(".logger").text() + "updateBackgroundColor ");
+
     var style = window.getComputedStyle(document.body);
     var bg_color = parseColorToHex(style.backgroundColor || '#fff');
     Telegram.WebApp.setBackgroundColor(bg_color);
@@ -187,6 +208,8 @@ var Cafe = {
 
   updateMainButton: function () {
     console.log("started updateMainButton");
+    $(".logger").text($(".logger").text() + "updateMainButton ");
+
     var mainButton = Telegram.WebApp.MainButton;
     if (Cafe.modeOrder) {
       if (Cafe.isLoading) {
@@ -212,6 +235,8 @@ var Cafe = {
 
   updateTotalPrice: function () {
     console.log("started updateTotalPrice");
+    $(".logger").text($(".logger").text() + "updateTotalPrice ");
+
     var total_price = 0;
     $('.js-item').each(function () {
       var itemEl = $(this)
@@ -226,6 +251,8 @@ var Cafe = {
 
   getOrderData: function () {
     console.log("started getOrderData");
+    $(".logger").text($(".logger").text() + "getOrderData ");
+
     var order_data = [];
     $('.js-item').each(function () {
       var itemEl = $(this)
@@ -240,6 +267,8 @@ var Cafe = {
 
   toggleMode: function (mode_order) {
     console.log("started toggleMode");
+    $(".logger").text($(".logger").text() + "toggleMode ");
+
     Cafe.modeOrder = mode_order;
     var anim_duration, match;
     try {
@@ -297,6 +326,8 @@ var Cafe = {
 
   toggleLoading: function (loading) {
     console.log("started toggleLoading");
+    $(".logger").text($(".logger").text() + "toggleLoading ");
+
     Cafe.isLoading = loading;
     Cafe.updateMainButton();
     $('body').toggleClass('loading', !!Cafe.isLoading);
@@ -305,6 +336,8 @@ var Cafe = {
 
   mainBtnClicked: function () {
     console.log("started mainBtnClicked");
+    $(".logger").text($(".logger").text() + "mainBtnClicked ");
+
     if (!Cafe.canPay || Cafe.isLoading || Cafe.isClosed) {
       return false;
     }
@@ -354,11 +387,15 @@ var Cafe = {
 
   eStatusClicked: function () {
     console.log("started eStatusClicked");
+    $(".logger").text($(".logger").text() + "eStatusClicked ");
+
     Cafe.hideStatus();
   },
 
   showStatus: function (text) {
     console.log("started showStatus");
+    $(".logger").text($(".logger").text() + "showStatus ");
+
     clearTimeout(Cafe.statusTo);
     $('.js-status').text(text).addClass('shown');
     if (!Cafe.isClosed) {
@@ -368,12 +405,16 @@ var Cafe = {
 
   hideStatus: function () {
     console.log("started hideStatus");
+    $(".logger").text($(".logger").text() + "hideStatus ");
+
     clearTimeout(Cafe.statusTo);
     $('.js-status').removeClass('shown');
   },
 
   apiRequest: function (method, data, onCallback) {
     console.log("started apiRequest");
+    $(".logger").text($(".logger").text() + "apiRequest ");
+
     var authData = Telegram.WebApp.initData || '';
     $.ajax(Cafe.apiUrl, {
       type: 'POST',
@@ -394,6 +435,8 @@ var Cafe = {
 
 function parseColorToHex(color) {
   console.log("started parseColorToHex");
+  $(".logger").text($(".logger").text() + "parseColorToHex ");
+
   color += '';
   var match;
   if (match = /^\s*#([0-9a-f]{6})\s*$/i.exec(color)) {
@@ -423,6 +466,8 @@ function parseColorToHex(color) {
 
 function initRipple() {
   console.log("started initRipple");
+  $(".logger").text($(".logger").text() + "initRipple ");
+
   if (!document.querySelectorAll) return;
   var rippleHandlers = document.querySelectorAll('.ripple-handler');
   var redraw = function (el) { el.offsetTop + 1; }
@@ -477,4 +522,5 @@ function initRipple() {
       }
     })(rippleHandlers[i]);
   }
+  console.log("ended initRipple");
 }
