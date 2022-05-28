@@ -1,11 +1,12 @@
 (function ($) {
-  console.log("started jquery");
+  // console.log("started jquery");
   $.fn.redraw = function () {
     return this.map(function () { this.offsetTop; return this; });
   };
-  console.log("ended jquery");
-  console.log(" ");
+  // console.log("ended jquery");
+  // console.log(" ");
 })(jQuery);
+
 
 var Cafe = {
   canPay: false,
@@ -35,12 +36,13 @@ var Cafe = {
     $('.js-order-comment-field').each(function () {
       autosize(this);
     });
+    $('.sub_main').on('click', Cafe.mainBtnClicked);
     Telegram.WebApp.MainButton.setParams({
       text_color: '#fff'
     }).onClick(Cafe.mainBtnClicked);
     Telegram.WebApp.BackButton.onClick(Cafe.backBtnClicked);
     Telegram.WebApp.setHeaderColor('bg_color');
-    initRipple();
+    // initRipple();
   },
 
   // initLotties: function() {
@@ -62,18 +64,18 @@ var Cafe = {
   // },
 
   eIncrClicked: function (e) {
-    console.log("started eIncrClicked");
+    // console.log("started eIncrClicked");
     $(".logger").text($(".logger").text() + "eIncrClicked ");
 
     e.preventDefault();
     // Telegram.WebApp.HapticFeedback.impactOccurred('light');
     var itemEl = $(this).parents('.js-item');
     Cafe.incrClicked(itemEl, 1);
-    console.log("ended eIncrClicked");
+    // console.log("ended eIncrClicked");
   },
 
   eDecrClicked: function (e) {
-    console.log("started eDecrClicked");
+    // console.log("started eDecrClicked");
     $(".logger").text($(".logger").text() + "eDecrClicked ");
 
     e.preventDefault();
@@ -83,7 +85,7 @@ var Cafe = {
   },
 
   eEditClicked: function (e) {
-    console.log("started eEditClicked");
+    // console.log("started eEditClicked");
     $(".logger").text($(".logger").text() + "eEditClicked ");
 
     e.preventDefault();
@@ -91,14 +93,14 @@ var Cafe = {
   },
 
   backBtnClicked: function () {
-    console.log("started backBtnClicked");
+    // console.log("started backBtnClicked");
     $(".logger").text($(".logger").text() + "backBtnClicked ");
 
     Cafe.toggleMode(false);
   },
 
   getOrderItem: function (itemEl) {
-    console.log("started getOrderItem");
+    // console.log("started getOrderItem");
     $(".logger").text($(".logger").text() + "getOrderItem ");
 
     var id = itemEl.data('item-id');
@@ -108,7 +110,7 @@ var Cafe = {
   },
 
   updateItem: function (itemEl, delta) {
-    console.log("started updateItem");
+    // console.log("started updateItem");
     $(".logger").text($(".logger").text() + "updateItem ");
 
     var price = +itemEl.data('item-price');
@@ -142,7 +144,7 @@ var Cafe = {
   },
 
   incrClicked: function (itemEl, delta) {
-    console.log("started incrClicked");
+    // console.log("started incrClicked");
     $(".logger").text($(".logger").text() + "incrClicked ");
 
     if (Cafe.isLoading || Cafe.isClosed) {
@@ -158,14 +160,14 @@ var Cafe = {
   },
 
   formatPrice: function (price) {
-    console.log("started formatPrice");
+    // console.log("started formatPrice");
     $(".logger").text($(".logger").text() + "formatPrice ");
 
-    return '$' + Cafe.formatNumber(price / 1000, 2, '.', ',');
+    return Cafe.formatNumber(price / 100, 2, '.', ',') + ' ₽';
   },
 
   formatNumber: function (number, decimals, decPoint, thousandsSep) {
-    console.log("started formatNumber");
+    // console.log("started formatNumber");
     $(".logger").text($(".logger").text() + "formatNumber ");
 
     number = (number + '').replace(/[^0-9+\-Ee.]/g, '')
@@ -198,7 +200,7 @@ var Cafe = {
   },
 
   updateBackgroundColor: function () {
-    console.log("started updateBackgroundColor");
+    // console.log("started updateBackgroundColor");
     $(".logger").text($(".logger").text() + "updateBackgroundColor ");
 
     var style = window.getComputedStyle(document.body);
@@ -207,17 +209,19 @@ var Cafe = {
   },
 
   updateMainButton: function () {
-    console.log("started updateMainButton");
+    // console.log("started updateMainButton");
     $(".logger").text($(".logger").text() + "updateMainButton ");
 
     var mainButton = Telegram.WebApp.MainButton;
     if (Cafe.modeOrder) {
       if (Cafe.isLoading) {
+        $(".sub_main").css('display', '');
         mainButton.setParams({
           is_visible: true,
           color: '#65c36d'
         }).showProgress();
       } else {
+        $(".sub_main").css('display', '').text('PAY ' + Cafe.formatPrice(Cafe.totalPrice));
         mainButton.setParams({
           is_visible: !!Cafe.canPay,
           text: 'PAY ' + Cafe.formatPrice(Cafe.totalPrice),
@@ -225,6 +229,11 @@ var Cafe = {
         }).hideProgress();
       }
     } else {
+      if (Cafe.canPay) {
+        $(".sub_main").css('display', '').text('Смотреть заказ');
+      } else {
+        $(".sub_main").css('display', 'none');
+      }
       mainButton.setParams({
         is_visible: !!Cafe.canPay,
         text: 'VIEW ORDER',
@@ -234,7 +243,7 @@ var Cafe = {
   },
 
   updateTotalPrice: function () {
-    console.log("started updateTotalPrice");
+    // console.log("started updateTotalPrice");
     $(".logger").text($(".logger").text() + "updateTotalPrice ");
 
     var total_price = 0;
@@ -250,7 +259,7 @@ var Cafe = {
   },
 
   getOrderData: function () {
-    console.log("started getOrderData");
+    // console.log("started getOrderData");
     $(".logger").text($(".logger").text() + "getOrderData ");
 
     var order_data = [];
@@ -259,31 +268,32 @@ var Cafe = {
       var id = itemEl.data('item-id');
       var count = +itemEl.data('item-count') || 0;
       if (count > 0) {
-        order_data.push({ id: id, count: count });
+        order_data.push({ "id": id, "count": count });
       }
     });
-    return JSON.stringify(order_data);
+    // return JSON.stringify(order_data);
+    return order_data;
   },
 
   toggleMode: function (mode_order) {
-    console.log("started toggleMode");
+    // console.log("started toggleMode");
     $(".logger").text($(".logger").text() + "toggleMode ");
 
     Cafe.modeOrder = mode_order;
     var anim_duration, match;
-    try {
-      anim_duration = window.getComputedStyle(document.body).getPropertyValue('--page-animation-duration');
-      if (match = /([\d\.]+)(ms|s)/.exec(anim_duration)) {
-        anim_duration = +match[1];
-        if (match[2] == 's') {
-          anim_duration *= 1000;
-        }
-      } else {
-        anim_duration = 400;
-      }
-    } catch (e) {
-      anim_duration = 400;
-    }
+    // try {
+    //   anim_duration = window.getComputedStyle(document.body).getPropertyValue('--page-animation-duration');
+    //   if (match = /([\d\.]+)(ms|s)/.exec(anim_duration)) {
+    //     anim_duration = +match[1];
+    //     if (match[2] == 's') {
+    //       anim_duration *= 1000;
+    //     }
+    //   } else {
+    //     anim_duration = 400;
+    //   }
+    // } catch (e) {
+    //   anim_duration = 400;
+    // }
     if (mode_order) {
       var height = $('.cafe-items').height();
       // $('.js-item-lottie').each(function () {
@@ -296,13 +306,13 @@ var Cafe = {
       $('.js-order-comment-field').each(function () {
         autosize.update(this);
       });
-      Telegram.WebApp.expand();
-      setTimeout(function () {
-        // $('.js-item-lottie').each(function () {
-        //   console.log("rlottie");
-        //   // RLottie.setVisible(this, true);
-        // });
-      }, anim_duration);
+      // Telegram.WebApp.expand();
+      // setTimeout(function () {
+      //   // $('.js-item-lottie').each(function () {
+      //   //   console.log("rlottie");
+      //   //   // RLottie.setVisible(this, true);
+      //   // });
+      // }, anim_duration);
       Telegram.WebApp.BackButton.show();
     } else {
       // $('.js-item-lottie').each(function () {
@@ -325,7 +335,7 @@ var Cafe = {
   },
 
   toggleLoading: function (loading) {
-    console.log("started toggleLoading");
+    // console.log("started toggleLoading");
     $(".logger").text($(".logger").text() + "toggleLoading ");
 
     Cafe.isLoading = loading;
@@ -344,38 +354,42 @@ var Cafe = {
     if (Cafe.modeOrder) {
       var comment = $('.js-order-comment-field').val();
       var params = {
-        order_data: Cafe.getOrderData(),
-        comment: comment
+        "order_data": Cafe.getOrderData(),
+        "comment": String(comment)
       };
-      if (Cafe.userId && Cafe.userHash) {
-        params.user_id = Cafe.userId;
-        params.user_hash = Cafe.userHash;
-      }
-      var invoiceSupported = Telegram.WebApp.isVersionAtLeast('6.1');
-      if (invoiceSupported) {
-        params.invoice = 1;
-      }
+      // if (Cafe.userId && Cafe.userHash) {
+      //   params.user_id = Cafe.userId;
+      //   params.user_hash = Cafe.userHash;
+      // }
+      // var invoiceSupported = Telegram.WebApp.isVersionAtLeast('6.1');
+      // if (invoiceSupported) {
+      //   params.invoice = 1;
+      // }
       Cafe.toggleLoading(true);
       Cafe.apiRequest('makeOrder', params, function (result) {
         Cafe.toggleLoading(false);
         if (result.ok) {
-          if (invoiceSupported) {
-            Telegram.WebApp.openInvoice(result.invoice_url, function (status) {
-              if (status == 'paid') {
-                Telegram.WebApp.close();
-              } else if (status == 'failed') {
-                // Telegram.WebApp.HapticFeedback.notificationOccurred('error');
-                Cafe.showStatus('Payment has been failed.');
-              } else {
-                // Telegram.WebApp.HapticFeedback.notificationOccurred('warning');
-                Cafe.showStatus('You have cancelled this order.');
-              }
-            });
-          } else {
-            Telegram.WebApp.close();
-          }
+          // if (invoiceSupported) {
+          //   // Telegram.WebApp.openInvoice(result.invoice_url, function (status) {
+          //   //   if (status == 'paid') {
+          //   //     Telegram.WebApp.close();
+          //   //   } else if (status == 'failed') {
+          //   //     // Telegram.WebApp.HapticFeedback.notificationOccurred('error');
+          //   //     Cafe.showStatus('Payment has been failed.');
+          //   //   } else {
+          //   //     // Telegram.WebApp.HapticFeedback.notificationOccurred('warning');
+          //   //     Cafe.showStatus('You have cancelled this order.');
+          //   //   }
+          //   // });
+          // } else {
+          //   $(".logger").text($(".logger").text() + "send_sucsess ");
+          //   Telegram.WebApp.close();
+          // }
+          $(".logger").text($(".logger").text() + "send_sucsess ");
+          Telegram.WebApp.close();
         }
         if (result.error) {
+          $(".logger").text($(".logger").text() + "send_error ");
           // Telegram.WebApp.HapticFeedback.notificationOccurred('error');
           Cafe.showStatus(result.error);
         }
@@ -415,26 +429,72 @@ var Cafe = {
     console.log("started apiRequest");
     $(".logger").text($(".logger").text() + "apiRequest ");
 
-    var authData = Telegram.WebApp.initData || '';
-    $.ajax(Cafe.apiUrl, {
-      type: 'POST',
-      data: $.extend(data, { _auth: authData, method: method }),
-      dataType: 'json',
-      xhrFields: {
-        withCredentials: true
-      },
-      success: function (result) {
-        onCallback && onCallback(result);
-      },
-      error: function (xhr) {
-        onCallback && onCallback({ error: 'Server error' });
-      }
-    });
+    fetch("https://chatter.salebot.pro/api/" + String(tokenSalebotProject)
+    + "/tg_callback?group_id=MihailRequestsInfoBot&user_id=" + String(initDataUnsafe.user.id)
+    + "&message=" + String('send_data')
+    + "&website_msg_data=" + JSON.stringify(data))
+    .then(response => onCallback(response));
+
+    // var res = sendDataToSalebot('send_data', JSON.stringify(data), initDataUnsafe.user.id);
+    // console.log(res.ok);
+
+    // var message_as_action = 'send_data';
+    // var fetch_url = "https://chatter.salebot.pro/api/" + String(tokenSalebotProject) + "/tg_callback";
+    // var options = {
+    //   method: 'POST',
+    //   body: {
+    //     "group_id": "MihailRequestsInfoBot",
+    //     "user_id": String(initDataUnsafe.user.id),
+    //     "message": String(message_as_action),
+    //     "website_msg_data": data
+    //   }
+    // };
+    // var res = fetch(fetch_url, options)
+    //             .then(response => console.log(response.json()))
+    //             .then(result => alert(JSON.stringify(result, null, 2)));
+
+    //  console.log(`resp: ${response}`)
+    // onCallback(response);
+
+
+    // console.log(`result: ${res}`);
+
+    // $.ajax({
+    //   type: 'POST',
+    //   url: "https://chatter.salebot.pro/api/" + String(tokenSalebotProject) + "/tg_callback",
+    //   data: {
+    //     group_id: "MihailRequestsInfoBot",
+    //     user_id: String(initDataUnsafe.user.id),
+    //     message: "send_data",
+    //     website_msg_data: JSON.stringify(data)
+    //   },
+    //   contentType: "application/json; charset=utf-8",
+    //   dataType: 'json',
+    //   // xhrFields: {
+    //   //   withCredentials: true
+    //   // },
+    //   success: function (result) {
+    //     onCallback && onCallback(result);
+    //   },
+    //   error: function (xhr) {
+    //     onCallback && onCallback({ error: 'Server error' });
+    //   }
+    // });
   }
 };
 
+// function sendDataToSalebot(message_as_action = "send_data", website_msg_data = "test_message", user_id = "663044964") {
+//   var result;
+//   fetch("https://chatter.salebot.pro/api/" + String(tokenSalebotProject)
+//     + "/tg_callback?group_id=MihailRequestsInfoBot&user_id=" + String(user_id)
+//     + "&message=" + String(message_as_action)
+//     + "&website_msg_data=" + String(website_msg_data))
+//     .then(response => result = response);
+//   return result;
+// }
+
 function parseColorToHex(color) {
-  console.log("started parseColorToHex");
+  // console.log("started parseColorToHex");
   $(".logger").text($(".logger").text() + "parseColorToHex ");
 
   color += '';
@@ -464,63 +524,63 @@ function parseColorToHex(color) {
 
 /* Ripple */
 
-function initRipple() {
-  console.log("started initRipple");
-  $(".logger").text($(".logger").text() + "initRipple ");
+// function initRipple() {
+//   console.log("started initRipple");
+//   $(".logger").text($(".logger").text() + "initRipple ");
 
-  if (!document.querySelectorAll) return;
-  var rippleHandlers = document.querySelectorAll('.ripple-handler');
-  var redraw = function (el) { el.offsetTop + 1; }
-  var isTouch = ('ontouchstart' in window);
-  for (var i = 0; i < rippleHandlers.length; i++) {
-    (function (rippleHandler) {
-      function onRippleStart(e) {
-        var rippleMask = rippleHandler.querySelector('.ripple-mask');
-        if (!rippleMask) return;
-        var rect = rippleMask.getBoundingClientRect();
-        if (e.type == 'touchstart') {
-          var clientX = e.targetTouches[0].clientX;
-          var clientY = e.targetTouches[0].clientY;
-        } else {
-          var clientX = e.clientX;
-          var clientY = e.clientY;
-        }
-        var rippleX = (clientX - rect.left) - rippleMask.offsetWidth / 2;
-        var rippleY = (clientY - rect.top) - rippleMask.offsetHeight / 2;
-        var ripple = rippleHandler.querySelector('.ripple');
-        ripple.style.transition = 'none';
-        redraw(ripple);
-        ripple.style.transform = 'translate3d(' + rippleX + 'px, ' + rippleY + 'px, 0) scale3d(0.2, 0.2, 1)';
-        ripple.style.opacity = 1;
-        redraw(ripple);
-        ripple.style.transform = 'translate3d(' + rippleX + 'px, ' + rippleY + 'px, 0) scale3d(1, 1, 1)';
-        ripple.style.transition = '';
+//   if (!document.querySelectorAll) return;
+//   var rippleHandlers = document.querySelectorAll('.ripple-handler');
+//   var redraw = function (el) { el.offsetTop + 1; }
+//   var isTouch = ('ontouchstart' in window);
+//   for (var i = 0; i < rippleHandlers.length; i++) {
+//     (function (rippleHandler) {
+//       function onRippleStart(e) {
+//         var rippleMask = rippleHandler.querySelector('.ripple-mask');
+//         if (!rippleMask) return;
+//         var rect = rippleMask.getBoundingClientRect();
+//         if (e.type == 'touchstart') {
+//           var clientX = e.targetTouches[0].clientX;
+//           var clientY = e.targetTouches[0].clientY;
+//         } else {
+//           var clientX = e.clientX;
+//           var clientY = e.clientY;
+//         }
+//         var rippleX = (clientX - rect.left) - rippleMask.offsetWidth / 2;
+//         var rippleY = (clientY - rect.top) - rippleMask.offsetHeight / 2;
+//         var ripple = rippleHandler.querySelector('.ripple');
+//         ripple.style.transition = 'none';
+//         redraw(ripple);
+//         ripple.style.transform = 'translate3d(' + rippleX + 'px, ' + rippleY + 'px, 0) scale3d(0.2, 0.2, 1)';
+//         ripple.style.opacity = 1;
+//         redraw(ripple);
+//         ripple.style.transform = 'translate3d(' + rippleX + 'px, ' + rippleY + 'px, 0) scale3d(1, 1, 1)';
+//         ripple.style.transition = '';
 
-        function onRippleEnd(e) {
-          ripple.style.transitionDuration = 'var(--ripple-end-duration, .2s)';
-          ripple.style.opacity = 0;
-          if (isTouch) {
-            document.removeEventListener('touchend', onRippleEnd);
-            document.removeEventListener('touchcancel', onRippleEnd);
-          } else {
-            document.removeEventListener('mouseup', onRippleEnd);
-          }
-        }
-        if (isTouch) {
-          document.addEventListener('touchend', onRippleEnd);
-          document.addEventListener('touchcancel', onRippleEnd);
-        } else {
-          document.addEventListener('mouseup', onRippleEnd);
-        }
-      }
-      if (isTouch) {
-        rippleHandler.removeEventListener('touchstart', onRippleStart);
-        rippleHandler.addEventListener('touchstart', onRippleStart);
-      } else {
-        rippleHandler.removeEventListener('mousedown', onRippleStart);
-        rippleHandler.addEventListener('mousedown', onRippleStart);
-      }
-    })(rippleHandlers[i]);
-  }
-  console.log("ended initRipple");
-}
+//         function onRippleEnd(e) {
+//           ripple.style.transitionDuration = 'var(--ripple-end-duration, .2s)';
+//           ripple.style.opacity = 0;
+//           if (isTouch) {
+//             document.removeEventListener('touchend', onRippleEnd);
+//             document.removeEventListener('touchcancel', onRippleEnd);
+//           } else {
+//             document.removeEventListener('mouseup', onRippleEnd);
+//           }
+//         }
+//         if (isTouch) {
+//           document.addEventListener('touchend', onRippleEnd);
+//           document.addEventListener('touchcancel', onRippleEnd);
+//         } else {
+//           document.addEventListener('mouseup', onRippleEnd);
+//         }
+//       }
+//       if (isTouch) {
+//         rippleHandler.removeEventListener('touchstart', onRippleStart);
+//         rippleHandler.addEventListener('touchstart', onRippleStart);
+//       } else {
+//         rippleHandler.removeEventListener('mousedown', onRippleStart);
+//         rippleHandler.addEventListener('mousedown', onRippleStart);
+//       }
+//     })(rippleHandlers[i]);
+//   }
+//   console.log("ended initRipple");
+// }
