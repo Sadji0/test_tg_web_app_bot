@@ -267,8 +267,9 @@ var Cafe = {
       var itemEl = $(this)
       var id = itemEl.data('item-id');
       var count = +itemEl.data('item-count') || 0;
+      var price = itemEl.data('item-price');
       if (count > 0) {
-        order_data.push({ "id": id, "count": count });
+        order_data.push({ "id": id, "count": count, "price": price });
       }
     });
     // return JSON.stringify(order_data);
