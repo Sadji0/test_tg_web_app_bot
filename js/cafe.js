@@ -65,7 +65,7 @@ var Cafe = {
 
   eIncrClicked: function (e) {
     // console.log("started eIncrClicked");
-    $(".logger").text($(".logger").text() + "eIncrClicked ");
+    // $(".logger").text($(".logger").text() + "eIncrClicked ");
 
     e.preventDefault();
     // Telegram.WebApp.HapticFeedback.impactOccurred('light');
@@ -76,7 +76,7 @@ var Cafe = {
 
   eDecrClicked: function (e) {
     // console.log("started eDecrClicked");
-    $(".logger").text($(".logger").text() + "eDecrClicked ");
+    // $(".logger").text($(".logger").text() + "eDecrClicked ");
 
     e.preventDefault();
     // Telegram.WebApp.HapticFeedback.impactOccurred('light');
@@ -86,7 +86,7 @@ var Cafe = {
 
   eEditClicked: function (e) {
     // console.log("started eEditClicked");
-    $(".logger").text($(".logger").text() + "eEditClicked ");
+    // $(".logger").text($(".logger").text() + "eEditClicked ");
 
     e.preventDefault();
     Cafe.toggleMode(false);
@@ -94,14 +94,14 @@ var Cafe = {
 
   backBtnClicked: function () {
     // console.log("started backBtnClicked");
-    $(".logger").text($(".logger").text() + "backBtnClicked ");
+    // $(".logger").text($(".logger").text() + "backBtnClicked ");
 
     Cafe.toggleMode(false);
   },
 
   getOrderItem: function (itemEl) {
     // console.log("started getOrderItem");
-    $(".logger").text($(".logger").text() + "getOrderItem ");
+    // $(".logger").text($(".logger").text() + "getOrderItem ");
 
     var id = itemEl.data('item-id');
     return $('.js-order-item').filter(function () {
@@ -111,7 +111,7 @@ var Cafe = {
 
   updateItem: function (itemEl, delta) {
     // console.log("started updateItem");
-    $(".logger").text($(".logger").text() + "updateItem ");
+    // $(".logger").text($(".logger").text() + "updateItem ");
 
     var price = +itemEl.data('item-price');
     var count = +itemEl.data('item-count') || 0;
@@ -145,7 +145,7 @@ var Cafe = {
 
   incrClicked: function (itemEl, delta) {
     // console.log("started incrClicked");
-    $(".logger").text($(".logger").text() + "incrClicked ");
+    // $(".logger").text($(".logger").text() + "incrClicked ");
 
     if (Cafe.isLoading || Cafe.isClosed) {
       return false;
@@ -161,14 +161,14 @@ var Cafe = {
 
   formatPrice: function (price) {
     // console.log("started formatPrice");
-    $(".logger").text($(".logger").text() + "formatPrice ");
+    // $(".logger").text($(".logger").text() + "formatPrice ");
 
     return Cafe.formatNumber(price / 100, 2, '.', ',') + ' ₽';
   },
 
   formatNumber: function (number, decimals, decPoint, thousandsSep) {
     // console.log("started formatNumber");
-    $(".logger").text($(".logger").text() + "formatNumber ");
+    // $(".logger").text($(".logger").text() + "formatNumber ");
 
     number = (number + '').replace(/[^0-9+\-Ee.]/g, '')
     var n = !isFinite(+number) ? 0 : +number
@@ -201,7 +201,7 @@ var Cafe = {
 
   updateBackgroundColor: function () {
     // console.log("started updateBackgroundColor");
-    $(".logger").text($(".logger").text() + "updateBackgroundColor ");
+    // $(".logger").text($(".logger").text() + "updateBackgroundColor ");
 
     var style = window.getComputedStyle(document.body);
     var bg_color = parseColorToHex(style.backgroundColor || '#fff');
@@ -210,7 +210,7 @@ var Cafe = {
 
   updateMainButton: function () {
     // console.log("started updateMainButton");
-    $(".logger").text($(".logger").text() + "updateMainButton ");
+    // $(".logger").text($(".logger").text() + "updateMainButton ");
 
     var mainButton = Telegram.WebApp.MainButton;
     if (Cafe.modeOrder) {
@@ -224,7 +224,7 @@ var Cafe = {
         $(".sub_main").css('display', '').text('PAY ' + Cafe.formatPrice(Cafe.totalPrice));
         mainButton.setParams({
           is_visible: !!Cafe.canPay,
-          text: 'PAY ' + Cafe.formatPrice(Cafe.totalPrice),
+          text: 'Отправить в бота. Сумма: ' + Cafe.formatPrice(Cafe.totalPrice),
           color: '#31b545'
         }).hideProgress();
       }
@@ -236,7 +236,7 @@ var Cafe = {
       }
       mainButton.setParams({
         is_visible: !!Cafe.canPay,
-        text: 'VIEW ORDER',
+        text: 'Смотреть заказ',
         color: '#31b545'
       }).hideProgress();
     }
@@ -244,7 +244,7 @@ var Cafe = {
 
   updateTotalPrice: function () {
     // console.log("started updateTotalPrice");
-    $(".logger").text($(".logger").text() + "updateTotalPrice ");
+    // $(".logger").text($(".logger").text() + "updateTotalPrice ");
 
     var total_price = 0;
     $('.js-item').each(function () {
@@ -260,7 +260,7 @@ var Cafe = {
 
   getOrderData: function () {
     // console.log("started getOrderData");
-    $(".logger").text($(".logger").text() + "getOrderData ");
+    // $(".logger").text($(".logger").text() + "getOrderData ");
 
     var order_data = [];
     $('.js-item').each(function () {
@@ -278,7 +278,7 @@ var Cafe = {
 
   toggleMode: function (mode_order) {
     // console.log("started toggleMode");
-    $(".logger").text($(".logger").text() + "toggleMode ");
+    // $(".logger").text($(".logger").text() + "toggleMode ");
 
     Cafe.modeOrder = mode_order;
     var anim_duration, match;
@@ -337,7 +337,7 @@ var Cafe = {
 
   toggleLoading: function (loading) {
     // console.log("started toggleLoading");
-    $(".logger").text($(".logger").text() + "toggleLoading ");
+    // $(".logger").text($(".logger").text() + "toggleLoading ");
 
     Cafe.isLoading = loading;
     Cafe.updateMainButton();
@@ -346,8 +346,8 @@ var Cafe = {
   },
 
   mainBtnClicked: function () {
-    console.log("started mainBtnClicked");
-    $(".logger").text($(".logger").text() + "mainBtnClicked ");
+    // console.log("started mainBtnClicked");
+    // $(".logger").text($(".logger").text() + "mainBtnClicked ");
 
     if (!Cafe.canPay || Cafe.isLoading || Cafe.isClosed) {
       return false;
@@ -386,12 +386,12 @@ var Cafe = {
           //   $(".logger").text($(".logger").text() + "send_sucsess ");
           //   Telegram.WebApp.close();
           // }
-          $(".logger").text($(".logger").text() + "send_sucsess ");
+          // $(".logger").text($(".logger").text() + "send_sucsess ");
           Telegram.WebApp.close();
         }
         if (result.error) {
-          $(".logger").text($(".logger").text() + "send_error ");
-          // Telegram.WebApp.HapticFeedback.notificationOccurred('error');
+          // $(".logger").text($(".logger").text() + "send_error ");
+          Telegram.WebApp.HapticFeedback.notificationOccurred('error');
           Cafe.showStatus(result.error);
         }
       });
@@ -401,15 +401,15 @@ var Cafe = {
   },
 
   eStatusClicked: function () {
-    console.log("started eStatusClicked");
-    $(".logger").text($(".logger").text() + "eStatusClicked ");
+    // console.log("started eStatusClicked");
+    // $(".logger").text($(".logger").text() + "eStatusClicked ");
 
     Cafe.hideStatus();
   },
 
   showStatus: function (text) {
-    console.log("started showStatus");
-    $(".logger").text($(".logger").text() + "showStatus ");
+    // console.log("started showStatus");
+    // $(".logger").text($(".logger").text() + "showStatus ");
 
     clearTimeout(Cafe.statusTo);
     $('.js-status').text(text).addClass('shown');
@@ -419,20 +419,20 @@ var Cafe = {
   },
 
   hideStatus: function () {
-    console.log("started hideStatus");
-    $(".logger").text($(".logger").text() + "hideStatus ");
+    // console.log("started hideStatus");
+    // $(".logger").text($(".logger").text() + "hideStatus ");
 
     clearTimeout(Cafe.statusTo);
     $('.js-status').removeClass('shown');
   },
 
   apiRequest: function (method, data, onCallback) {
-    console.log("started apiRequest");
-    $(".logger").text($(".logger").text() + "apiRequest ");
+    // console.log("started apiRequest");
+    // $(".logger").text($(".logger").text() + "apiRequest ");
 
     fetch("https://chatter.salebot.pro/api/" + String(tokenSalebotProject)
     + "/tg_callback?group_id=MihailRequestsInfoBot&user_id=" + String(initDataUnsafe.user.id)
-    + "&message=" + String('send_data')
+    + "&message=" + String('send_order')
     + "&website_msg_data=" + JSON.stringify(data))
     .then(response => onCallback(response));
 
@@ -496,7 +496,7 @@ var Cafe = {
 
 function parseColorToHex(color) {
   // console.log("started parseColorToHex");
-  $(".logger").text($(".logger").text() + "parseColorToHex ");
+  // $(".logger").text($(".logger").text() + "parseColorToHex ");
 
   color += '';
   var match;
