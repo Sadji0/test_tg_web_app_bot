@@ -1,0 +1,77 @@
+#rotateDiv {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+	display: none;
+	background-color: black;
+}
+
+#rotateDiv img {
+	display: block;
+	height: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#rotateDiv p {
+
+	float: top;
+	color: #fff;
+	text-align: center;
+}
+#game{
+	z-index:10;
+}
+
+body {
+	margin: 0;
+}
+
+#adBanner {
+	position: fixed;
+	z-index: 10;
+	display: none;
+}
+
+#adFullScreen {
+	z-index: 18;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+#adFullScreen img{
+	position: absolute;
+	top: 1%;
+	left: 1%;
+	height: 35px;
+	width: 35px;
+	padding: 5px;
+}
+
+#menu {
+	position: fixed;
+}
+
+.spilgames-branding-image{
+	display: block;
+	left: 0px;
+	top: 0px;
+	position: absolute;
+}
+
+#spilgames-more-games-btn {
+	color: #f8f8f8;
+	background-color: #1EAF2F;
+	border-radius: 10px;
+	padding: 6px;
+	text-decoration: none;
+	bottom: 0px;
+	position: absolute;
+}

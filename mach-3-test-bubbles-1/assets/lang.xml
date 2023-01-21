@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<stringresources>
+<languages>
+<language>en</language>
+<language>sk</language>
+<language>es</language>
+<language>cz</language>
+<language>de</language>
+<language>it</language>
+<language>fr</language>
+<language>ru</language>
+<language>pt</language>
+</languages>
+<strings>
+
+<string id="1" index="0">
+<en>INSTRUCTIONS\n\nAIM:\nSWAP ADJACENT BUBBLES TO FORM HORIZONTAL OR VERTICAL CHAINS OF 3 OR MORE OF THE SAME COLOUR. IF YOU MATCH 4 OR 5 BUBBLES AT ONCE, YOU GET SPECIAL EXPOLODING BUBBLES. YOU CAN ALSO TRY TO COMBINE THESE SPECIAL BUBBLES FOR A COMBINED EFFECT. ACHIEVE THE GOALS TO COMPLETE ALL LEVELS! IF YOU MANAGE TO COMPLETE ALL OF THEM WITH A 3 STAR RATING, YOU GET A SURPRISE!</en>
+<ru>ИНСТРУКЦИЯ\n\nЦЕЛЬ:\nПЕРЕДВИГАЙТЕ СОСЕДНИЕ ПУЗЫРЬКИ, ЧТОБЫ СФОРМИРОВАТЬ ГОРИЗОНТАЛЬНУЮ ИЛИ ВЕРТИКАЛЬНУЮ ЦЕПОЧКИ ИЗ 3 ИЛИ БОЛЕЕ ОДИНАКОВОГО ЦВЕТА. ЕСЛИ ВЫ СОБИРАЕТЕ 4 ИЛИ 5 ПУЗЫРЬКОВ В ЦЕПОЧКУ, ВЫ ПОЛУЧАЕТЕ ОСОБЫЕ УЛУЧШЕНИЯ. ВЫ МОЖЕТЕ ТАКЖЕ ПОПРОБОВАТЬ, СОЕДИНИТЬ ЭТИ СПЕЦИАЛЬНЫЕ ПУЗЫРЬКИ ДЛЯ КОМБИНИРОВАННОГО ЭФФЕКТА. ВЫПОЛНИТЕ ВСЕ ЦЕЛИ, ЧТОБЫ ЗАВЕРШИТЬ ВСЕ УРОВНИ! ЕСЛИ ВАМ УДАСТСЯ ЗАВЕРШИТЬ ВСЕ УРОВНИ С 3-ЗВЕЗДНЫМ РЕЙТИНГОМ, ВЫ ПОЛУЧИТЕ ПОДАРОК!</ru>
+<sk>INŠTRUKCIE\n\nCIEĽ:\nVYMIEŇAJ SUSEDNÉ BUBLINY A FORMUJ HORIZONTÁLNE ALEBO VERTIKÁLNE REŤAZCE TROCH ALEBO VIACERÝCH ROVNAKEJ FARBY. AK SPOJÍŠ 4 ALEBO 5 BUBLÍN SÚČASNE, ZÍSKAŠ ŠPECIÁLNE, EXPLODUJÚCE BUBLINY. MÔŽEŠ SKÚŠAŤ AJ KOMBINOVAŤ TIETO ŠPECIÁLNE BUBLINY PRE KOMBINOVANÝ EFEKT. SPLŇ CIELE PRE PREJDENIE VŠETKÝCH ÚROVNÍ! AK VŠETKY ZVLÁDNEŠ NA 3 HVIEZDIČKY, ČAKÁ ŤA PREKVAPENIE!</sk>
+<es>INSTRUCCIONES\n\nOBJETIVO:\nCAMBIA LAS BURBUJAS COLINDANTES Y FORMA CADENAS HORIZONTALES O VERTICALES DE TRES O MÁS BURBUJAS DEL MISMO COLOR. SI UNES 4 O 5 BURBUJAS A LA VEZ, CONSIGUES LAS BURBUJAS ESPECIALES Y EXPLOTADORAS. TAMBIÉN PUEDES PROBAR DE  COMBINAR ESTAS BURBUJAS ESPECIALES PARA UN EFECTO COMBINABLE. ¡CUMPLE LOS OBJETIVOS PARA LOGRAR TODOS LOS NIVELES! ¡SI SUPERAS TODOS CON 3 ESTRELLITAS, TE ESPERA UNA SORPRESA!</es>
+<cz>INSTRUKCE:\n\nCÍLEM HRY JE VYMĚNIT JEDEN DRAHOKAM ZA SOUSEDNÍ A VYTVOŘIT ŘETĚZ TŘÍ NEBO VÍCE DRAHOKAMŮ STEJNÉ BARVY. POKUD VZNIKNE TAKOVÝ ŘETĚZEC, DRAHOKAMY ZMIZÍ, A TÍM ZPŮSOBÍ PÁD NOVÝCH DRAHOKAMŮ. NĚKDY SE PADAJÍCÍ DRAHOKAMY AUTOMATICKY SEŘADÍ SAMI, COŽ ZPŮSOBÍ ŘETĚZOVOU REAKCI. SPÁROVÁNÍ ČTYŘ DRAHOKAMŮ VYTVOŘÍ "EXPLODE GEM" (VÝBUŠNÝ DRAHOKAM), KTERÝ ZNIČÍ I PŘILEHLÉ DRAHOKAMY A PŘIČTE SE TAK VYŠŠÍ SKÓRE. SPÁROVÁNÍ PĚTI DRAHOKAMŮ VYTVOŘÍ "SPECTRUM GEM" (SPEKTRUM DRAHOKAM). PO VÝMĚNĚ "SPECTRUM GEM" ZNIČIT VŠECHNY DRAHOKAMY TÉ BARVY ZA KTEROU BYL VYMĚNĚN. SPÁRUJTE DRAHOKAMY DO FORMY PÍSMENE "L" NEBO "T" A ZÍSKEJTE "CROSS GEM" (PŘÍČNÝ DRAHOKAM), KTERÝ ZNIČÍ VŠECHNY DRAHOKAMY V DANÉM ŘÁDKU A SLOUPCI.</cz>
+<de>INSTRUKTIONEN\n\nZIEL:\nTAUSCHE BENACHBARTE BLASEN, UM HORIZONTALE ODER VERTIKALE KETTEN VON 3 ODER MEHR BLASEN DERSELBEN FARBE ZU BILDEN. FÜHRST DU 4 ODER 5 BLASEN ZUSAMMEN, ERHÄLTST DU SPEZIELLE EXPLODIERENDE BLASEN! VERSUCHE AUCH, DIESE SPEZIELLEN BLASEN ZU KOMBINIEREN, UM SPEZIALEFFEKTE ZU ERZIELEN. ERFÜLLE DIE ZIELVORGABEN, UM ALLE LEVELS ABZUSCHLIESSEN! WENN DU ES SCHAFFST, ALLE LEVELS MIT EINER 3-STERNE-BEWERTUNGEN ZU BEENDEN, ERHÄLTST DU EINE ÜBERRASCHUNG!</de>
+<it>ISTRUZIONI\n\nLO SCOPO DEL GIOCO E QUELLO DI SOSTITUIRE UNA GEMMA (UN DIAMANTE) CON QUELLA ACCANTO E DI CREARE UNA CATENA DI TRE O PIU GEMME DELLO STESSO COLORE. SE SI CREA QUESTA CATENA, LE GEMME SCOMPAIONO CAUSANDO LA CADUTA DELLE GEMME NUOVE. A VOLTE LE GEMME CADENTI SI ORDINANO AUTOMATICAMENTE DA SOLE, PROVOCANDO UNA REAZIONE A CATENA. ACCOPPIAMENTO DI QUATTRO GEMME CREA UNA "EXPLODE GEM" (UNA GEMMA ESPLOSIVA) CHE DISTRUGGE ANCHE LE GEMME ADIACENTI E VIENE AGGIUNTO IL PUNTEGGIO PIU ALTO. ACCOPPIAMENTO DI CINQUE GEMME CREA UN "SPECTRUM GEM” (VARIETA GEMMA). DOPO LO SCAMBIO "SPECTRUM GEM" DISTRUGGERA TUTTE LE GEMME DI QUEL COLORE CON IL QUALE E STATO SOSTITUITO. ACCOPPIATE LE GEMME IN MODO DA FORMARE LA LETTERA "L" O "T" ED OTTENETE "CROSS GEM" (UNA GEMMA TRASVERSALE) CHE DISTRUGGERA TUTTE LE GEMME IN RELATIVA RIGA E COLONNA.</it>
+<fr>INSTRUCTIONS\n\nBUT:\nREMPLACEZ LES BULLES VOISINES POUR FORMER DES CHAÎNES HORIZONTALES OU VERTICALES DE 3 BULLES OU PLUS DE LA MÊME COULEUR. SI VOUS CONNECTEZ 4 OU 5 BULLES À LA FOIS, VOUS OBTENEZ DES BULLES EXPLOSIVES SPÉCIALES. VOUS POUVEZ ÉGALEMENT ESSAYER DE COMBINER CES BULLES SPÉCIALES POUR UN EFFET ENCORE PLUS DÉVASTATEUR. REMPLISSEZ LES OBJECTIFS ET COMPLÉTEZ TOUS LES NIVEAUX! SI VOUS PARVENEZ À OBTENIR 3 ÉTOILES PARTOUT, VOUS OBTIENDREZ UNE GROSSE SURPRISE!</fr>
+<pt>INSTRUÇOES\n\nOBJETIVO:\nTROQUE AS BOLHAS ADJACENTES E FORME AS CADEIAS HORIZONTAIS OU VERTICAIS DE TRÊS OU MAIS BOLHAS DA MESMA COR. SE VOCÊ COMBINAR 4 OU 5 BOLHAS SIMULTANEAMENTE, RECEBERÁ AS BOLHAS ESPECIAIS QUE EXPLODEM. VOCÊ TAMBÉM PODE TENTAR COMBINAR ESSAS BOLHAS ESPECIAIS PARA UM EFEITO COMBINADO. CUMPRA OS OBJETIVOS PARA PASSAR TODOS OS NÍVEIS! SE VOCÊ CONSEGUIR OBTER 3 ESTRELAS EM TODOS OS NÍVEIS, RECEBERÁ UMA SURPRESA!</pt>
+</string>
+
+
+<string id="2" index="1">
+<en>QUIT?</en>
+<ru>ВЫЙТИ?</ru>
+<sk>KONIEC?</sk>
+<es>¿FIN?</es>
+<cz>KONEC?</cz>
+<de>ENDE?</de>
+<it>FINE?</it>
+<fr>ARRETER?</fr>
+<pt>FIM?</pt>
+</string>
+
+
+<string id="3" index="2">
+<en>en</en>
+<sk>sk</sk>
+<es>es</es>
+<cz>cz</cz>
+<de>de</de>
+<it>it</it>
+<fr>fr</fr>
+<ru>ru</ru>
+<pt>pt</pt>
+<cn>cn</cn>
+</string>
+
+
+<string id="4" index="3">
+<en></en>
+<sk></sk>
+<es></es>
+<cz></cz>
+<de></de>
+<it></it>
+<fr></fr>
+<ru></ru>
+<pt></pt>
+<cn></cn>
+</string>
+
+
+<string id="5" index="4">
+<en>ENABLE MUSIC?</en>
+<ru>ВКЛЮЧИТЬ МУЗЫКУ?</ru>
+<sk>ZAPNÚŤ ZVUKY?</sk>
+<es>ENCENDER LA MÚSICA?</es>
+<cz>ZAPNOUT ZVUKY?</cz>
+<de>MUSIK EINSCHALTEN?</de>
+<it>ACCENDERE SUONI?</it>
+<fr>ALLUMER LA MUSIQUE?</fr>
+<pt>LIGAR SONS?</pt>
+</string>
+
+
+<string id="6" index="5">
+<en>YES</en>
+<ru>ДА</ru>
+<sk>ÁNO</sk>
+<es>SI</es>
+<cz>ANO</cz>
+<de>JA</de>
+<it>SI</it>
+<fr>QUI</fr>
+<pt>SIM</pt>
+<cn>?</cn>
+</string>
+
+
+<string id="7" index="6">
+<en>NO</en>
+<ru>НЕТ</ru>
+<sk>NIE</sk>
+<es>NO</es>
+<cz>NE</cz>
+<de>NEIN</de>
+<it>NO</it>
+<fr>NON</fr>
+<pt>NAO</pt>
+<cn>?</cn>
+</string>
+
+
+<string id="8" index="7">
+<en>LEVEL</en>
+<ru>УРОВЕНЬ</ru>
+<sk>ÚROVEŇ</sk>
+<es>NIVEL</es>
+<cz>ÚROVEŇ</cz>
+<de>STUFE</de>
+<it>LIVELLO</it>
+<fr>NIVEAU</fr>
+<pt>NÍVEL</pt>
+</string>
+
+<string id="9" index="8">
+<en>COMPLETED</en>
+<ru>ВЫПОЛНЕН</ru>
+<sk>UKONČENÁ</sk>
+<es>TERMINADO</es>
+<cz>UKONČENÁ</cz>
+<de>BEENDET</de>
+<it>COMPIUTO</it>
+<fr>TERMINÉ</fr>
+<pt>COMPLETO</pt>
+</string>
+
+<string id="10" index="9">
+<en>SCORE</en>
+<ru>СЧЕТ</ru>
+<sk>SKÓRE</sk>
+<es>PUNTUACIÓN</es>
+<cz>SKÓRE</cz>
+<de>PUNKTZAHL</de>
+<it>SCORE</it>
+<fr>SCORE</fr>
+<pt>PONTO</pt>
+</string>
+
+<string id="11" index="10">
+<en>TIME'S UP</en>
+<ru>ВРЕМЯ ЗАКОНЧИЛОСЬ</ru>
+<sk>ČAS VYPRŠAL</sk>
+<es>EL TIEMPO HA EXPIRADO</es>
+<cz>VYPRŠEL ČAS</cz>
+<de>DIE ZEIT IST ABGELAUFEN</de>
+<it>TEMPO SCADUTO</it>
+<fr>LE TEMPS A ÉCOULÉ</fr>
+<pt>SEU TEMPO ACABOU</pt>
+</string>
+
+<string id="12" index="11">
+<en>NO MORE MOVES</en>
+<ru>НЕТ БОЛЬШЕ ХОДОВ</ru>
+<sk>NIE JE ĎALŠÍ ŤAH</sk>
+<es>NO HAY MÁS MOVIMIENTOS</es>
+<cz>NENÍ DALŠÍ TAH</cz>
+<de>ES BLEIBT KEIN ZUG MEHR</de>
+<it>MOSSE ESAURITE</it>
+<fr>IL NE RESTE OCUN TIR</fr>
+<pt>NÂO HÁ MAIS JOGADAS POSSÍVEIS</pt>
+</string>
+
+<string id="13" index="12">
+<en>GAME OVER</en>
+<ru>ИГРА ОКОНЧЕНА</ru>
+<sk>KONIEC HRY</sk>
+<es>FIN DE JUEGO</es>
+<cz>KONEC HRY</cz>
+<de>SPIELE ENDE</de>
+<it>FINE DEL GIOCO</it>
+<fr>GAME OVER</fr>
+<pt>FIM DO JOGO</pt>
+</string>
+
+<string id="14" index="13">
+<en>CONTINUE</en>
+<ru>ПРОДОЛЖИТЬ</ru>
+<sk>POKRAČOVAŤ</sk>
+<es>CONTINUAR</es>
+<cz>POKRAČOVAT</cz>
+<de>WEITER</de>
+<it>CONTINUA</it>
+<fr>CONTINUER</fr>
+<pt>CONTINUAR</pt>
+</string>
+
+<string id="15" index="14">
+<en>NEW RECORD</en>
+<ru>НОВЫЙ РЕКОРД</ru>
+<sk>NOVÝ REKORD</sk>
+<es>NUEVO RÉCORD</es>
+<cz>NOVÝ REKORD</cz>
+<de>NEUER REKORD</de>
+<it>NUOVO RECORD</it>
+<fr>NOUVEAU RECORD</fr>
+<pt>NOVO RECORDE</pt>
+</string>
+
+
+<string id="16" index="15">
+<en>\n\nCONTROLS:\n2 OR NAVIGATION KEY UP - MOVE CURSOR UP \ UP IN MENU\n8 OR NAVIGATION KEY DOWN - MOVE CURSOR DOWN \ DOWN IN MENU\n4 OR NAVIGATION KEY LEFT - MOVE CURSOR LEFT \ LEFT IN MENU\n6 OR NAVIGATION KEY RIGHT - MOVE CURSOR RIGHT \ RIGHT IN MENU\n5 OR CENTRAL NAVIGATION KEY - SELECT \ SELECT TILE IN GAME\nLEFT SOFT KEY - SELECT, HINT (INGAME)\nRIGHT SOFT KEY - QUIT IN MAIN MENU, BACK IN MENU, PAUSE \ UNPAUSE GAME</en>
+<ru>\n\nУПРАВЛЕНИЕ:\n2 ИЛИ ДЖОЙСТИКОМ ВВЕРХ - ПЕРЕМЕСТИТЬ КУРСОР ВВЕРХ \ ВВЕРХ ПО МЕНЮ\n8 ИЛИ ДЖОЙСТИКОМ ВНИЗ - ПЕРЕМЕСТИТЬ КУРСОР ВНИЗ \ ВНИЗ ПО МЕНЮ\n4  ИЛИ ДЖОЙСТИКОМ ВЛЕВО - ПЕРЕМЕСТИТЬ КУРСОР ВЛЕВО \ ВЛЕВО ПО МЕНЮ\n6 ИЛИ ДЖОЙСТИКОМ ВПРАВО - ПЕРЕМЕСТИТЬ ВПРАВО КУРСОР \ ВПРАВО ПО МЕНЮ\n5 ИЛИ НАЖМИТЕ НА ДЖОЙСТИК ПО ЦЕНТРУ - ВЫБРАТЬ \ ВЫБРАТЬ ПУЗЫРЕК В ИГРЕ\nЛЕВАЯ ФУНКЦИОНАЛЬНАЯ КЛАВИША - ВЫБРАТЬ, СОВЕТ (В ИГРЕ) \ ПРАВАЯ ФУНКЦИОНАЛЬНАЯ КЛАВИША - ВЫЙТИ В ГЛАВНОЕ МЕНЮ, НАЗАД В МЕНЮ, ВЕРНУТЬСЯ В МЕНЮ, ПАУЗА \ СНЯТЬ С ПАУЗЫ ИГРУ</ru>
+<sk>\n\nOVLÁDANIE:\n2 ALEBO NAVIGAČNÝ KLÁVES HORE - POHYB KURZOROM SMEROM HORE \ HORE V MENU\n8 ALEBO NAVIGAČNÝ KLÁVES DOLE - POHYB KURZOROM SMEROM DOLE \ DOLE V MENU\n4 ALEBO NAVIGAČNÝ KLÁVES VĽAVO - POHYB KURZOROM SMEROM VĽAVO \ VĽAVO V MENU\n6 ALEBO NAVIGAČNÝ KLÁVES VPRAVO - POHYB KURZOROM SMEROM VPRAVO \ VPRAVO V MENU\n5 ALEBO STREDNÝ NAVIGAČNÝ KLÁVES - POTVRDENIE \ OZNAČENIE OBJEKTU V HRE\nĽAVÝ FUNKČNÝ KLÁVES - VÝBER, NÁPOVEDA (V HRE)\nPRAVÝ FUNKČNÝ KLÁVES - KONIEC APLIKÁCIE V HLAVNOM MENU, SPÄŤ, PAUZA V HRE</sk>
+<fr>\n\nCONTRÔLES:\nTOUCHE 2 OU NAVIGATION HAUT - DÉPLACEZ LE CURSEUR VERS LE HAUT \ DÉPLACER VERS LE HAUT DANS LE MENU\nTOUCHE 8 OU NAVIGATION BAS - DÉPLACEZ LE CURSEUR VERS LE BAS \ DÉPLACER VERS LE BAS DANS LE MENU\nTOUCHE 4 OU NAVIGATION GAUCHE - DÉPLACEZ LE CURSEUR VERS LA GAUCHE \ DÉPLACER VERS LA GAUCHE DANS LE MENU\nTOUCHE 6 OU NAVIGATION DROITE - DÉPLACEZ LE CURSEUR VERS LA DROITE \ DÉPLACER VERS LA DROITE DANS LE MENU\nTOUCHE 5 OU NAVIGATION CENTRALE - SÉLECTIONNEZ LA GEMME EN JEU\nTOUCHE DE FONCTION GAUCHE - SÉLECTIONNER, INDICE DE DÉPLACEMENT (EN JEU)\nTOUCHE DE FONCTION DROITE - RETOUR DANS LE MENU PRINCIPAL, PAUSE \ ACTIVER LE JEU</fr>
+<de>\n\nSTEUERUNG:\n2 ODER OBERE NAVIGATIONSTASTE - BEWEGUNG DES CURSORS NACH OBEN \ NACH OBEN IM MENÜ\n8 ODER UNTERE NAVIGATIONSTASTE - BEWEGUNG DES CURSORS NACH UNTEN \ NACH UNTEN IM MENÜ\n4 ODER LINKE NAVIGATIONSTASTE - BEWEGUNG DES CURSORS NACH LINKS \ NACH LINKS IM MENÜ\n6 ODER RECHTE NAVIGATIONSTASTE - BEWEGUNG DES CURSORS NACH RECHTS \ NACH RECHTS IM MENÜ\n5 ODER ZENTRALE NAVIGATIONSTASTE - BESTÄTIGEN \ AUSWAHL DES OBJEKTS IM SPIEL\nLINKE FUNKTIONSTASTE - AUSWAHL, HILFE (IM SPIEL)\nRECHTE FUNKTIONSTASTE - APPLIKATION IM HAUPTMENÜ AUSSCHALTEN, ZURÜCK IM MENÜ, PAUSE IM SPIEL</de>
+<es>\n\nCONTROL:\n2 O LA TECLA DE NAVEGACIÓN ARRIBA - MOVIMIENTO CON EL CURSOR PARA ARRIBA \ ARRIBA EN EL MENÚ\n8 O LA TECLA DE NAVEGACIÓN ABAJO - MOVIMIENTO CON EL CURSOR PARA ABAJO \ ABAJO EN EL MENÚ\n4 O LA TECLA DE NAVEGACIÓN IZQUIERDA  - MOVIMIENTO CON EL CURSOR A LA IZQUIERDA \ A LA IZQUIERDA EN EL MENÚ\n6 O LA TECLA DE NAVEGACIÓN DERECHA  - MOVIMIENTO CON EL CURSOR A LA DERECHA \ A LA DERECHA EN EL MENÚ\n5 O LA TECLA CENTRAL DE NAVEGACIÓN  - CONFIRMACIÓN  \ SELECCIÓN DE OBJETO EN EL JUEGO\nTECLA FUNCIONAL IZQUIERDA  - SELECCIÓN, AYUDA (EN EL JUEGO)\nTECLA FUNCIONAL DERECHA  - EXIT DE LA APLICACIÓN EN EL MENÚ PRINCIPAL, VOLVER, PAUSA DEL JUEGO</es>
+<pt>\n\nCONTROLE:\n2 OU TECLA DE NAVEGAÇÃO PARA CIMA - MOVER O CURSOR PARA CIMA \ PARA CIMA NO MENU\n8 OU TECLA DE NAVEGAÇÃO PARA BAIXO - MOVER O CURSOR PARA BAIXO \ PARA BAIXO NO MENU\n4 OU TECLA DE NAVEGAÇÃO ESQUERDA - MOVER O CURSOR PARA A ESQUERDA \ À ESQUERDA NO MENU\n6 OU TECLA DE NAVEGAÇÃO DIREITA - MOVER O CURSOR PARA A DIREITA \ À DIREITA NO MENU\n5 OU TECLA DE NAVEGAÇÃO CENTRAL - CONFIRMAR \ DESIGNAÇÃO DO OBJETO NO JOGO\nTECLA DE FUNÇÃO ESQUERDA - SELEÇÃO, AJUDA (NO JOGO)\nTECLA DE FUNÇÃO DIREITA - TERMINAR A APLICAÇÃO NO MENU PRINCIPAL, VOLTAR, PAUSAR O JOGO</pt>
+</string>
+
+<string id="17" index="16">
+<en>\n\nCONTROLS:\nTO SELECT, TAP THE DESIRED BUBBLE AND SWIPE IN THE DIRECTION YOU WANT TO SWAP IT. TAP OTHER ONSCREEN ICONS FOR CORRESPONDING ACTION (PLAY, PAUSE, HINT...).</en>
+<ru>\n\nУПРАВЛЕНИЕ:\nВЫБЕРИТЕ И НАЖМИТЕ НА ЖЕЛАЕМЫЙ ПУЗЫРЕК И ПРОВЕДИТЕ В НАПРАВЛЕНИИ, С КОТОРЫМ ВЫ ХОТИТЕ ПОМЕНЯТЬ. ИСПОЛЬЗУЙТЕ ДРУГИЕ ИКОНКИ НА ЭКРАНЕ ДЛЯ ВЫПОЛНЕНИЯ СООТВЕТСТВУЮЩЕГО ДЕЙСТВИЯ (ВОСПРОИЗВЕДЕНИЕ, ПАУЗА, ПОДСКАЗКА ...).</ru>
+<sk>\n\nOVLÁDANIE:\nPRE VÝBER, DOTKNI SA DANEJ BUBLINY A POTIAHNI DO TEJ STRANY, DO KTOREJ JU CHEŠ VYMENIŤ. TAPUJ OSTATNÉ IKONY NA OBRAZOVKE PRE KOREŠPONDUJÚCI EFEKT (HRAŤ, PAUZA, NÁPOVEDA...).</sk>
+<fr>\n\nCONTRÔLES:\nPOUR SÉLECTIONNER, APPUYEZ SUR LA BULLE DÉSIRÉE ET GLISSEZ-LA DANS LA DIRECTION SOUHAITÉE. APPUYEZ SUR UNE ICÔNES DE L`ÉCRAN POUR LES ACTIONS CORRESPONDANTES (JOUER, PAUSE, INDCE DE DÉPLACEMENT...).</fr>
+<de>\n\nSTEUERUNG:\nTIPPE DIE GEWÜNSCHTE BLASE AN UND ZIEHE SIE IN DIE RICHTUNG, IN DIE DU SIE BEWEGEN MÖCHTEST. TIPPE AUF ANDERE SYMBOLE AUF DEM BILDSCHIRM, UM DIE ENTSPRECHENDE AKTION DURCHZUFÜHREN (SPIELEN, PAUSE, HILFE... ). </de>
+<es>\n\nCONTROL:\nPARA SELECCIONAR TOCA LA BURBUJA DADA Y ARRASTRA EN DIRECCIÓN ADONDE LO QUIERES CAMBIAR.  TOCA OTROS ICONOS EN LA PANTALLA PARA EL EFECTO CORRESPONDIENTE (JUGAR, PAUSA, AYUDA...).</es>
+<pt>\n\nCONTROLE:\nPARA A SELEÇÃO TOQUE A BOLHA RELEVANTE E PUXE PARA O LADO PELO QUAL VOCÊ A DESEJA SUBSTITUIR. TOQUE EM OUTROS ÍCONES NA TELA PARA O EFEITO CORRESPONDENTE (JOGAR, PAUSAR, AJUDA...).</pt>
+<it>\n\nComando:\nPer selezionare tocca la bolla scelta e spostala nella direzione, verso la quale la vuoi sostituire. Tocca altre icone sullo schermo per l'effetto corrispondente (Gioca, PAUSA, SUGGERIMENTO...).</it>
+</string>
+
+<string id="18" index="17">
+<en>\n\nMENU ITEMS:\n1. PLAY - CHOOSE A STAGE AND START PLAYING\n2. INSTRUCTIONS - AIM OF THE GAME, CONTROLS, DESCRIPTION OF THE MAIN MENU ITEMS\n3. ABOUT - GAME DEVELOPER AND VERSION\n4. MUSIC - TURN ON\OFF SOUNDS\n5. QUIT - EXIT GAME</en>
+<ru>\n\nПУНКТЫ В МЕНЮ:\n1. ИГРАТЬ - ВЫБЕРИТЕ ЭТАП И НАЧНИТЕ ИГРАТЬ\n2. ИНСТРУКЦИЯ - ЦЕЛЬ ИГРЫ, ОРГАНЫ УПРАВЛЕНИЯ, ОПИСАНИЕ ГЛАВНЫХ ПУНКТОВ МЕНЮ\n3. ОБ ИГРЕ – ИНФОРМАЦИЯ  О РАЗРАБОТЧИКЕ И ВЕРСИИ ИГРЫ\n4. МУЗЫКА - ВКЛЮЧИТЬ \ ВЫКЛЮЧИТЬ ЗВУКИ\n5. ВЫЙТИ - ВЫЙТИ ИЗ ИГРЫ</ru>
+<sk>\n\nOPIS POLOŽIEK V MENU:\n1. HRAŤ - VYBER SI ÚROVEŇ A ZAČNI HRAŤ\n2. INŠTRUKCIE - CIEĽ HRY, OVLÁDANIE, OPIS HLAVNÝCH POLOŽIEK MENU\n3. O HRE - AUTOR HRY, NÁZOV A VERZIA HRY\n4. ZAP.\VYP. ZVUKU - ZAPNÚŤ ALEBO VYPNÚŤ ZVUK\n5. KONIEC - VYPNUTIE APLIKÁCIE</sk>
+<fr>\n\nÉLEMENTS DU MENU:\n1. JOUER - CHOIX DU NIVEAU ET COMMENCER UNE PARTIE\n2. INSTRUCTIONS - LE BUT DU JEU, LES CONTRÔLES, DESCRIPTION DES OBJETS DU MENU PRINCIPAL\n3. A PROPOS - LE DÉVELOPPEUR DU JEU, LE NOM DU JEU ET LA VERSION\n4. SON OUI/NON - ACTIVER \ DÉSACTIVER LE SON\n5. QUITTER - SORTIR DU JEU</fr>
+<de>\n\nMENÜELEMENTE:\n1. SPIELEN - STUFE WÄHLEN UND EIN NEUES SPIEL BEGINNEN\n2. INSTRUKTIONEN - ZIEL DES SPIELS, STEUERUNG, BESCHREIBUNG DER HAUPTMENÜELEMENTE\n3. ÜBER DAS SPIEL - ENTWICKLER UND SPIELVERSION\n4. TON AN\AUS - TON ANSCHALTEN ODER AUSSCHALTEN\n5. ENDE - APPLIKATION AUSSCHALTEN\n</de>
+<es>\n\nDESCRIPCIÓN DE ÍTEMS EN EL MENÚ:\n1. JUGAR - SELECCIONA EL NIVEL Y EMPIEZA A JUGAR\n2. INSTRUCCIONES - OBJETIVO DEL JUEGO, CONTROL, DESCRIPCIÓN DE LOS ÍTEMS PRINCIPALES DE MENÚ\n3. ACERCA DE - AUTOR DEL JUEGO, NOMBRE Y VERSIÓN DEL JUEGO\n4. ON\OFF DE SONIDO - ENCENDER O APAGAR EL SONIDO\n5. SALIR - SALIR DEL JUEGO</es>
+<pt>\n\nDESCRIÇAO DOS ITENS NO MENU:\n1. JOGAR - SELECIONE O NÍVEL E COMEÇA A JOGAR\n2. INSTRUÇOES - OBJETIVO DO JOGO, CONTROLE, DESCRIÇÃO DOS ITENS PRINCIPAIS DO MENU\n3. SOBRE O JOGO - O AUTOR DO JOGO, NOME E VERSÃO DO JOGO\n4. LIG.\DESLIG. SOM - LIGAR OU DESLIGAR O SOM \n5. SAIR - DESLIGAR APLICAÇÃO</pt>
+</string>
+
+<string id="19" index="18">
+<en>MENU</en>
+<ru>МЕНЮ</ru>
+<sk>MENU</sk>
+<fr>MENU</fr>
+<de>MENÜ</de>
+<es>MENÚ</es>
+<pt>MENU</pt>
+<it>MENU</it>
+</string>
+
+<string id="20" index="19">
+<en>BACK</en>
+<ru>НАЗАД</ru>
+<sk>SPÄŤ</sk>
+<fr>ARRIERE</fr>
+<de>ZURÜCK</de>
+<es>ATRAS</es>
+<pt>VOLTAR</pt>
+</string>
+
+<string id="21" index="20">
+<en>PLAY</en>
+<ru>ИГРАТЬ</ru>
+<sk>HRAJ</sk>
+<fr>JOUER</fr>
+<de>SPIELEN</de>
+<es>JUEGO</es>
+<pt>JOGA</pt>
+<it>GIOCA</it>
+</string>
+
+<string id="22" index="21">
+<en>INSTRUCTIONS</en>
+<ru>ИНСТРУКЦИЯ</ru>
+<sk>INŠTRUKCIE</sk>
+<fr>INSTRUCTIONS</fr>
+<de>INSTRUKTIONEN</de>
+<es>INSTRUCCIONES</es>
+<pt>INSTRUÇOES</pt>
+<it>Istruzioni</it>
+</string>
+
+<string id="23" index="22">
+<en>ABOUT</en>
+<ru>ОБ ИГРЕ</ru>
+<sk>O HRE</sk>
+<fr>A PROPOS</fr>
+<de>ÜBER</de>
+<es>ACERCA DE</es>
+<pt>SOBRE</pt>
+<it>informazioni su</it>
+</string>
+
+<string id="24" index="23">
+<en>CONTINUE</en>
+<ru>ПРОДОЛЖИТЬ</ru>
+<sk>POKRAČOVAŤ</sk>
+<fr>CONTINUER</fr>
+<de>WEITER</de>
+<es>CONTINUAR</es>
+<pt>CONTINUAR</pt>
+<it>Continua</it>
+</string>
+
+<string id="25" index="24">
+<en>RESTART</en>
+<ru>ЗАПУСТИТЬ СНОВА</ru>
+<sk>REŠTARTOVAŤ</sk>
+<fr>RECOMMENCER</fr>
+<de>NEUSTART</de>
+<es>REINICIAR</es>
+<pt>REINICIE</pt>
+<it>Riavviare</it>
+</string>
+
+<string id="26" index="25">
+<en>ON</en>
+<ru>ВКЛЮЧИТЬ</ru>
+<sk>ZAP.</sk>
+<fr>ON</fr>
+<de>AN</de>
+<es>ON</es>
+<pt>LIGAR</pt>
+<it>Acc.</it>
+</string>
+
+<string id="27" index="26">
+<en>OFF</en>
+<ru>ВЫКЛЮЧИТЬ</ru>
+<sk>VYP.</sk>
+<fr>OFF</fr>
+<de>AUS</de>
+<es>OFF</es>
+<pt>DESLIGAR</pt>
+<it>Chiud.</it>
+</string>
+
+<string id="28" index="27">
+<en>SOUNDS</en>
+<ru>ЗВУКИ</ru>
+<sk>ZVUKY</sk>
+<fr>SONS</fr>
+<de>TON</de>
+<es>SONIDO</es>
+<pt>SOM</pt>
+<it>Suoni</it>
+</string>
+
+<string id="29" index="28">
+<en>USE 2, 4, 6, 8 OR DIRECTIONAL KEYS TO MOVE CURSOR OR SELECTED BUBBLE. PRESS 5 OR CENTRAL KEY TO SELECT A BUBBLE.</en>
+<ru>ИСПОЛЬЗУЙТЕ 2, 4, 6, 8 ИЛИ ДЖОЙСТИК ДЛЯ ПЕРЕМЕЩЕНИЯ КУРСОРА. ВЫБОР ПУЗЫРЯ. НАЖМИТЕ 5 ИЛИ НА ДЖОЙСТИК, ЧТОБЫ ВЫБРАТЬ ПУЗЫРЬ.</ru>
+<sk>POUŽI 2, 4, 6, 8 ALEBO NAVIGAČNÉ KLÁVESY PRE POHYB KURZORA ALEBO OZNAČENEJ BUBLINY. STLAČ 5 ALEBO CENTRÁLNY KLÁVES PRE OZNAČENIE BUBLINY.</sk>
+<fr>UTILISEZ LES TOUCHES 2, 4, 6, 8 OU LES TOUCHES DE NAVIGATION POUR DÉPLACER LE CURSEUR OU SÉLECTIONNER LA BULLE. TOUCHEZ 5 OU LA TOUCHE DE NAVIGATION CENTRALE POUR SÉLECTIONNER UNE BULLE.</fr>
+<de>BENUTZE 2, 4, 6, 8 ODER DIE NAVIGATIONSTASTEN UM DEN CURSOR, ODER DIR BEZEICHNETE BLASE ZU BEWEGEN. DRÜCKE 5 ODER DIE ZENTRALE NAVIGATIONSTASTE UM DIE BLASE ZU BEZEICHNEN.</de>
+<es>UTILIZA 2, 4, 6, 8 O LAS TECLAS DE NAVEGACIÓN PARA MOVER EL CURSOR O LA BURBUJA SELECCIONADA. PULSA 5 O LA TECLA CENTRAL PARA SELECCIONAR LA BURBUJA.</es>
+<pt>USE 2, 4, 6, 8 OU AS TECLAS DE NAVEGAÇÃO PARA MOVER O CURSOR OU A BOLHA MARCADA. PRESSIONE 5 OU A TECLA CENTRAL PARA MARCAR A BOLHA.</pt>
+</string>
+
+<string id="30" index="29">
+<en>TO SELECT, TAP THE DESIRED BUBBLE AND SWIPE TOWARDS THE ONE YOU WANT TO SWAP IT WITH.</en>
+<ru>ЧТОБЫ ВЫБРАТЬ, КОСНИТЕСЬ ЖЕЛАЕМОГО ПУЗЫРЯ И ПРОВЕДИТЕ К ТОМУ, С КЕМ ВЫ ХОТИТЕ ПОМЕНЯТЬ ЕГО.</ru>
+<sk>PRE OZNAČENIE SA DOTKNI DANEJ BUBLINY. POTIAHNI OZNAČENÚ BUBLINU ZVOLENÝM SMEROM ABY SA VYMENIL SO SUSEDOM.</sk>
+<fr>POUR SÉLECTIONNER UNE BULLE, APPUYEZ SUR LA BULLE DÉSIRÉE. FAITES LA GLISSER DANS LA DIRECTION SOUHAITÉE POUR L`ÉCHANGER AVEC SON VOISIN.</fr>
+<de>UM DIE BLASE ZU BEZEICHNEN, TIPPE SIE AN. ZIEHE DIE GEWÄHLTE BLASE UM SIE GEGEN DIE NACHBARBLASE ZU TAUSCHEN.</de>
+<es>PARA SELCCIONAR HAY QUE TOCAR LA BURBUJA DADA. ARRASTRA LA BURBUJA SELECCIONADA EN DIRECCIÓN DESEADA PARA CAMBIAR CON LA COLINDANTE.</es>
+<pt>PARA A DESIGNAÇÃO, TOQUE NA BOLHA RELEVANTE. PUXE A BOLHA DESIGNADA NA DIREÇÃO ESCOLHIDA PARA QUE SE TROQUE COM O VIZINHO.</pt>
+<it>Per selezionare, tocca una bolla e scorri il dito verso quella con la quale la vuoi scambiare.</it>
+</string>
+
+<string id="31" index="30">
+<en>SWAP ADJACENT BUBBLES TO FORM CHAINS OF 3 OR MORE OF THE SAME COLOUR. BUILD YOUR HIGH SCORE AND GET SPECIAL BUBBLES!</en>
+<ru>ПОМЕНЯЙТЕ МЕСТАМИ ПУЗЫРЬКИ, ЧТОБЫ СФОРМИРОВАТЬ ЦЕПОЧКИ ИЗ 3 ИЛИ БОЛЕЕ ОДИНАКОВОГО ЦВЕТА. ПОЛУЧИТЕ САМЫЙ ВЫСОКИЙ БАЛЛ И ПОЛУЧИТЕ СПЕЦИАЛЬНЫЕ ПУЗЫРЬКИ!</ru>
+<sk>VYMIEŇAJ SUSEDNÉ BUBLINY A VYTVÁRAJ TROJICE ALEBO DLHŠIE REŤAZCE ROVNAKEJ FARBY. BUDUJ SI SKÓRE A ZÍSKAVAJ ŠPECIÁLNE BUBLINY!</sk>
+<fr>REMPLACEZ DES BULLES VOISINES POUR FORMER DES CHAÎNES DE TROIS OU PLUS DE LA MÊME COULEUR. RÉALISEZ LE MEILLEUR SCORE ET OBTENEZ DES BULLES SPÉCIALES!</fr>
+<de>TAUSCHE DIE NACHBARBLASEN UND BILDE DREIER- ODER LÄNGERE REIHEN GLEICHER FARBE. BAUE DEINE PUNKTZAHL AUF UND GEWINNE SPEZIELLE BLASEN!</de>
+<es>CAMBIA LAS BURBUJAS COLINDANTES Y FORMA TRÍOS O CADENAS MÁS LARGAS DEL MISMO COLOR. ¡AUMENTA TU PUNTUACIÓN Y CONSEGUIRÁS BURBUJAS ESPECIALES!</es>
+<pt>TROQUE AS BOLHAS ADJACENTES E FORME OS TRIOS OU CADEIAS MAIS LONGAS DA MESMA COR. AUMENTE A SUA PONTUAÇÃO E GANHE AS BOLHAS ESPECIAIS!</pt>
+<it>Scambia le bolle adiacenti per creare delle sequenze di 3 o più bolle dello stesso colore. Migliora il tuo punteggio e ottieni delle bolle speciali!</it>
+</string>
+
+<string id="32" index="31">
+<en>BLOCKS CRACK WHEN BUBBLES INSIDE THEM ARE MATCHED. SOME BLOCKS ARE TOUGHER THAN OTHERS!</en>
+<ru>ТРЕЩИНЫ В БЛОКАХ ПОЯВЛЯЮТСЯ, КОГДА ПУЗЫРИ ВНУТРИ НИХ СОБЕРАЮТСЯ В ЦЕПОЧКУ. НЕКОТОРЫЕ БЛОКИ БОЛЕЕ КРЕПКИЕ!</ru>
+<sk>BLOKY SA ZLOMIA AK V NICH SPOJÍŠ BUBLINY. NIEKTORÉ BLOKY SÚ TVRDŠIE AKO OSTATNÉ!</sk>
+<fr>LES BLOCS CASSENT QUAND LES BULLES À L`INTÉRIEUR SONT JUMELÉES. CERTAINS BLOCS SONT PLUS DIFFICILES À DÉTRUIRE.</fr>
+<de>DIE BLÖCKE BRECHEN, WENN DU DIE BLASEN DARIN ZUSAMMENFÜHRST. MANCHE BLÖCKE SIND HÄRTER ALS ANDERE!</de>
+<es>LOS BLOQUES SE ROMPEN SI DENTRO DE ELLOS UNES LAS BURBUJAS. ¡ALGUNOS BLOQUES SON MÁS RESISTENTES QUE OTROS!</es>
+<pt>SE VOCÊ NÃO ALINHA AS BOLHAS NOS BLOCOS, ELES QUEBRAM. ALGUNS BLOCOS SÃO MAIS DUROS DO QUE OUTROS!</pt>
+<it>I blocchi si rompono abbinando le bolle al loro interno. Alcuni blocchi sono più resistenti di altri!</it>
+</string>
+
+<string id="33" index="32">
+<en>RINGS MAKE BUBBLES FLOAT UP. MATCH THEM BEFORE THEY REACH THE TOP!</en>
+<ru>ПУЗЫРЬКИ С КОЛЬЦАМИ ВСПЛЫВАЮТ. СОБЕРИТЕ ИХ В ЦЕПОЧКУ, ПРЕЖДЕ ЧЕМ ОНИ ДОСТИГНУТ ВЕРШИНЫ!</ru>
+<sk>VĎAKA PRSTENCOM SA BUBLINY VZNÁŠAJÚ NAHOR. SPOJ ICH SKÔR NEŽ DOSIAHNÚ VRCHOL!</sk>
+<fr>LES ALLIANCES FORMENT DES BULLES QUI FLOTTENT. CONNECTEZ-LES AVANT QU'ELLES N'ATTEIGNENT LE HAUT DU TABLEAU!</fr>
+<de>RINGE LASSEN DIE BLASEN AUFSTEIGEN. FÜHRE SIE ZUSAMMEN, BEVOR SIE DIE OBERFLÄCHE ERREICHEN!</de>
+<es>GRACIAS A LOS ANILLOS, BURBUJAS FLOTAN HACIA ARRIBA. ¡UNELAS ANTES QUE LLEGUEN A LA CIMA!</es>
+<pt>GRAÇAS AOS ANÉIS AS BOLHAS FLUTUAM. JUNTÁ-LAS ANTES QUE ATINJAM O TOPO!</pt>
+<it>GLI ANELLI FANNO SALIRE LE BOLLE. ABBINALE PRIMA CHE ARRIVINO IN ALTO!</it>
+</string>
+
+<string id="34" index="33">
+<en>DIAMONDS DO NOT MATCH. YOUR GOAL IS TO BRING THEM TO THE BOTTOM.</en>
+<ru>ДИАМАНТЫ НЕ СОБЕРАТСЯ В ЦЕПОЧКУ, ВАША ЦЕЛЬ - ДОВЕСТИ ИХ ДО НИЗУ.</ru>
+<sk>DIAMANTY SA NESPÁJAJÚ. TVOJÍM CIEĽOM JE DOSTAŤ ICH NASPODOK.</sk>
+<fr>LES DIAMANTS NE PEUVENT PAS ÊTRE CONNECTÉS. VOTRE BUT EST DE LES AMENER EN BAS DU TABLEAU POUR LES ÉLIMINER.</fr>
+<de>DIE DIAMANTEN WERDEN NICHT ZUSAMMENGEFÜHRT. DAS ZIEL IST ES, SIE ZUM BODEN ZU BRINGEN.</de>
+<es>LOS DIAMANTES NO SE UNEN. TU META ES PONERLOS ABAJO.</es>
+<pt>OS DIAMANTES NÃO SE JUNTAM. SEU OBJETIVO É POSICIONÁ-LOS AO FUNDO.</pt>
+<it>I DIAMANTI NON SI ABBINANO. CERCA DI PORTARLI VERSO IL BASSO.</it>
+</string>
+
+<string id="35" index="34">
+<en>TIME IS RUNNING! YOU HAVE TO REACH YOUR GOAL UNTIL IT RUNS OUT!</en>
+<ru>ВРЕМЯ ЗАКАНЧИВАЕТСЯ! ВЫ ДОЛЖНЫ ВЫПОЛНИТЬ ВАШИ ЦЕЛИ, ЧТОБЫ ЗАВЕРШИТЬ УРОВЕНЬ!</ru>
+<sk>ČAS BEŽÍ! MUSÍŠ STIHNÚŤ SPLNIŤ CIEĽ KÝM ČAS VYPRŠÍ!</sk>
+<fr>LE TEMPS PRESSE! VOUS DEVEZ ATTEINDRE L`OBJECTIF RAPIDEMENT!</fr>
+<de>DIE ZEIT LÄUFT! DU MUSST DAS ZIEL ERREICHEN, BIS SIE ABLÄUFT!</de>
+<es>¡EL TIEMPO SE ACABA! ¡TIENES QUE CUMPLIR CON EL OBJETIVO ANTES DE QUE SE ACABE EL TIEMPO!</es>
+<pt>O TEMPO ESTÁ CORRENDO! VOCÊ TEM QUE CUMPRIR A META ANTES DO TEMPO ACABAR!</pt>
+<it>IL TEMPO STA PER SCADERE! CERCA DI CONSEGUIRE IL TUO OBIETTIVO PRIMA DEL TERMINE!</it>
+</string>
+
+<string id="36" index="35">
+<en>GET</en>
+<ru>ПОЛУЧИТЬ</ru>
+<sk>ZÍSKAJ</sk>
+<fr>OBTENEZ</fr>
+<de>ERREICHE</de>
+<es>CONSIGUE</es>
+<pt>GANHE</pt>
+<it>OTTIENI</it>
+</string>
+
+<string id="37" index="36">
+<en>POINTS</en>
+<ru>ОЧКОВ</ru>
+<sk>BODOV</sk>
+<fr>POINTS</fr>
+<de>PUNKTE</de>
+<es>PUNTOS</es>
+<pt>PONTOS</pt>
+<it>PUNTI</it>
+</string>
+
+<string id="38" index="37">
+<en>BREAK ALL THE BLOCKS</en>
+<ru>РАЗБИТЬ ВСЕ БЛОКИ</ru>
+<sk>PRASKNI VŠETKY BLOKY</sk>
+<fr>BRISER TOUS LES BLOCS</fr>
+<de>PLATZE ALLE BLÖCKE</de>
+<es>ESTALLA TODOS LOS BLOQUES</es>
+<pt>QUEBRE TODOS OS BLOCOS</pt>
+<it>ROMPI TUTTI I BLOCCHI</it>
+</string>
+
+<string id="39" index="38">
+<en>POP</en>
+<ru>ЛОПНУТЬ</ru>
+<sk>PRASKNI</sk>
+<fr>SAUTEZ</fr>
+<de>LASSE</de>
+<es>ESTALLA</es>
+<pt>QUEBRE</pt>
+<it>FAI SCOPPIARE</it>
+</string>
+
+<string id="40" index="39">
+<en>RINGS</en>
+<ru>КОЛЕЦ</ru>
+<sk>PRSTENCOV</sk>
+<fr>ALLIANCES</fr>
+<de>RINGE</de>
+<es>ANILLOS</es>
+<pt>ANÉIS</pt>
+<it>ANELLI</it>
+</string>
+
+<string id="41" index="40">
+<en>BRING</en>
+<ru>ДОВЕСТИ</ru>
+<sk>DOSTAŇ</sk>
+<fr>APPORTEZ</fr>
+<de>BRINGE</de>
+<es>CONSIGUE</es>
+<pt>DESLOQUE</pt>
+<it>PORTA</it>
+</string>
+
+<string id="42" index="41">
+<en>DIAMONDS DOWN</en>
+<ru>БРИЛЛИАНТЫ ВНИЗ</ru>
+<sk>DIAMANTOV DOLE</sk>
+<fr>DIAMANTS EN BAS</fr>
+<de>DIAMANTEN ZUM BODEN</de>
+<es>DIAMANTES ABAJO</es>
+<pt>DIAMANTES AO FUNDO</pt>
+</string>
+
+<string id="43" index="42">
+<en>MAKE</en>
+<ru>СДЕЛАТЬ</ru>
+<sk>UROB</sk>
+<fr>FAITES</fr>
+<de>MACHE</de>
+<es>HAZ</es>
+<pt>FAÇA</pt>
+<it>COMPLETA</it>
+</string>
+
+<string id="44" index="43">
+<en>VALID TURNS</en>
+<ru>ПРАВИЛЬНЫХ ПЕРЕМЕЩЕНИЙ</ru>
+<sk>PLATNÝCH ŤAHOV</sk>
+<fr>TOURS VALIDES</fr>
+<de>GÜLTIGE ZÜGE</de>
+<es>MOVIMIENTOS VÁLIDOS</es>
+<pt>TURNOS VÁLIDOS</pt>
+<it>TURNI VALIDI</it>
+</string>
+
+<string id="45" index="44">
+<en>WITHIN</en>
+<ru>ЗА</ru>
+<sk>V RÁMCI</sk>
+<fr>EN</fr>
+<de>UND DAS IN</de>
+<es>DENTRO DE</es>
+<pt>EM</pt>
+<it>ENTRO</it>
+</string>
+
+<string id="46" index="45">
+<en>SECONDS</en>
+<ru>СЕКУНД</ru>
+<sk>SEKÚND</sk>
+<fr>SECONDES</fr>
+<de>SEKUNDEN</de>
+<es>SEGUNDOS</es>
+<pt>SEGUNDOS</pt>
+<it>SECONDI</it>
+</string>
+
+<string id="47" index="46">
+<en>WITHIN</en>
+<ru>ЗА</ru>
+<sk>V RÁMCI</sk>
+<fr>EN</fr>
+<de>UND DAS IN</de>
+<es>DENTRO DE</es>
+<pt>EM</pt>
+</string>
+
+<string id="48" index="47">
+<en>TURNS</en>
+<ru>ПЕРЕМЕЩЕНИЙ</ru>
+<sk>ŤAHOV</sk>
+<fr>COUPS</fr>
+<de>ZÜGEN</de>
+<es>MOVIMIENTOS</es>
+<pt>TURNOS</pt>
+<it>TURNI</it>
+</string>
+
+<string id="49" index="48">
+<en>WELL DONE !</en>
+<ru>ОТЛИЧНО СРАБОТАНО !</ru>
+<sk>DOBRÁ PRÁCA !</sk>
+<fr>BIEN JOUÉ !</fr>
+<de>GUTE ARBEIT !</de>
+<es>¡BUEN TRABAJO !</es>
+<pt>ÓTIMO !</pt>
+<it>BENISSIMO!</it>
+</string>
+
+<string id="50" index="49">
+<en>GLAMOROUS !</en>
+<ru>ОЧАРОВАТЕЛЬНО!</ru>
+<sk>OČARUJÚCE !</sk>
+<fr>MAGNIFIQUE !</fr>
+<de>FASZINIEREND !</de>
+<es>¡FASCINANTE !</es>
+<pt>MAGNÍFICO !</pt>
+<it>GRANDIOSO!</it>
+</string>
+
+<string id="51" index="50">
+<en>SHINY !</en>
+<ru>БЛЕСТЯЩЕ!</ru>
+<sk>LESKLÉ !</sk>
+<fr>BRAVO !</fr>
+<de>GLÄNZEND !</de>
+<es>¡BRILLANTE !</es>
+<pt>RELUZENTE !</pt>
+<it>SPLENDIDO!</it>
+</string>
+
+<string id="52" index="51">
+<en>TRY AGAIN !</en>
+<ru>ПОПРОБУЙТЕ СНОВА !</ru>
+<sk>SKÚS ZNOVA !</sk>
+<fr>ESSAYEZ À NOUVEAU !</fr>
+<de>VERSUCHE ES NOCH EINMAL !</de>
+<es>¡INTENTA OTRA VEZ !</es>
+<pt>TENTE NOVAMENTE !</pt>
+<it>RIPROVA!</it>
+</string>
+
+<string id="53" index="52">
+<en>TO SELECT, TAP THE DESIRED JEWEL AND SWIPE TOWARDS THE ONE YOU WANT TO SWAP IT WITH.</en>
+<ru>ЧТОБЫ ВЫБРАТЬ, КОСНИТЕСЬ ЖЕЛАЕМОГО ПУЗЫРЯ И ПРОВЕДИТЕ ПАЛЬЦЕМ К ТОМУ, С КЕМ ВЫ ХОТИТЕ ПОМЕНЯТЬ ЕГО.</ru>
+<sk>PRE OZNAČENIE SA DOTKNI DANÉHO DRAHOKAMU. POTIAHNI OZNAČENÝ DRAHOKAM ZVOLENÝM SMEROM ABY SA VYMENIL SO SUSEDOM.</sk>
+<fr>POUR SÉLECTIONNER UN DIAMANT, APPUYEZ SUR LE RUBIS DÉSIRÉ. FAITES GLISSER CELUI SÉLECTIONNÉ DANS LA DIRECTION SOUHAITÉE POUR L`ÉCHANGER AVEC SON VOISIN.</fr>
+<de>TIPPE DEN GEWÜNSCHTEN EDELSTEIN AN, UM IHN AUSZUWÄHLEN. ZIEHE IHN ZU DEM STEIN, MIT DEM DU IHN TAUSCHEN MÖCHTEST.</de>
+<es>PARA MARCAR TOCA LA PIEDRA PRECIOSA DADA. ARRASTRA LA PIEDRA MARCADA HACIA LA DIRECCIÓN DESEADA PARA CAMBIARLA POR LA COLINDANTE.</es>
+<pt>PARA MARCAR A GEMA TOQUE NELA. A GEMA MARCADA PODE SER DESLOCADA AO DESLIZAR O DEDO NA DIREÇÃO DESEJADA. </pt>
+</string>
+
+<string id="54" index="53">
+<en>USE 2, 4, 6, 8 OR DIRECTIONAL KEYS TO MOVE CURSOR OR SELECTED JEWEL. PRESS 5 OR CENTRAL KEY TO SELECT A JEWEL.</en>
+<ru>ИСПОЛЬЗУЙТЕ 2, 4, 6, 8 ИЛИ ДЖОЙТСИК ДЛЯ ПЕРЕМЕЩЕНИЯ КУРСОРА ИЛИ ВЫБОРА ПУЗЫРЯ. НАЖМИТЕ 5 ИЛИ ДЖОЙТСИК, ЧТОБЫ ВЫБРАТЬ ПУЗЫРЬ.</ru>
+<sk>POUŽI 2, 4, 6, 8 ALEBO NAVIGAČNÉ KLÁVESY PRE POHYB KURZORA ALEBO OZNAČENÉHO DRAHOKAMU. STLAČ 5 ALEBO CENTRÁLNY KLÁVES PRE OZNAČOVANIE.</sk>
+<fr>UTILISEZ LES TOUCHES 2, 4, 6, 8 OU LES TOUCHES DE NAVIGATION POUR DÉPLACER LE CURSEUR OU SÉLECTIONNER LE DIAMANT. TOUCHE 5 OU TOUCHE DE NAVIGATION CENTRALE POUR SÉLECTIONNER UN RUBIS.</fr>
+<de>BENUTZE 2, 4, 6, 8 ODER DIE NAVIGATIONSTASTEN, UM DEN CURSOR ODER DEN AUSGEWÄHLTEN EDELSTEIN ZU BEWEGEN. DRÜCKE 5 ODER DIE MITTLERE NAVIGATIONSTASTE, UM EINEN EDELSTEIN AUSZUWÄHLEN.</de>
+<es>UTILIZA 2, 4, 6, 8 O LAS TECLAS DE NAVEGACIÓN PARA DESPLAZAR CON EL CURSOR O MARCAR LA PIEDRA PRECIOSA. PULSA 5 O LA TECLA CENTRAL PARA MARCAR.</es>
+<pt>UTILIZE TECLAS 2, 4, 6, 8 OU AS TECLAS DE NAVEGAÇÃO PARA MOVER O CURSOR OU A GEMA MARCADA. CARREGUE NO 5 OU NA TECLA DE NAVEGAÇÃO CENTRAL PARA MARCAR UM OBJETO.</pt>
+</string>
+
+<string id="55" index="54">
+<en>MORE GAMES</en>
+<ru>БОЛЬШЕ ИГР</ru>
+<es>MÁS JUEGOS</es>
+<de>MEHR SPIELE</de>
+<fr>PLUS DE JEUX</fr>
+<pt>MAIS JOGOS</pt>
+<sk>ĎALŠIE HRY</sk>
+</string>
+
+<string id="56" index="55">
+<en>LEVEL CLEARED!</en>
+<ru>УРОВЕНЬ ПРОЙДЕН!</ru>
+<es>¡NIVEL LOGRADO!</es>
+<de>LEVEL GESCHAFFT!</de>
+<fr>NIVEAU NETTOYÉ!</fr>
+<pt>NIVEL DOMINADO!</pt>
+<sk>ÚROVEŇ ZVLÁDNUTÁ!</sk>
+<it>LIVELLO COMPLETATO!</it>
+</string>
+
+<string id="57" index="56">
+<en>BOMBS LEFT</en>
+<ru>БОМБ ИСПОЛЬЗОВАНО</ru>
+<es>BOMBAS RESTANTES</es>
+<de>BOMBEN ÜBRIG</de>
+<fr>BOMBES RESTANTES</fr>
+<pt>BOMBAS RESTANTES</pt>
+<sk>ZVYŠNÉ BOMBY</sk>
+<it>BOMBE DISPONIBILI</it>
+</string>
+
+<string id="58" index="57">
+<en>DIAMONDS</en>
+<ru>БРИЛИАНТЫ</ru>
+<es>DIAMANTES</es>
+<de>DIAMANTEN</de>
+<fr>DIAMANTS</fr>
+<pt>DIAMANTES</pt>
+<sk>DIAMANTY</sk>
+</string>
+
+<string id="59" index="58">
+<en>RINGS</en>
+<ru>КОЛЕЦ</ru>
+<es>ANILLOS</es>
+<de>RINGE</de>
+<fr>ALLIANCES</fr>
+<pt>ANÉIS</pt>
+<sk>PRSTENCE</sk>
+</string>
+
+<string id="60" index="59">
+<en>LEVEL FAILED!</en>
+<ru>УРОВЕНЬ ПРОВАЛЕН!</ru>
+<es>¡NIVEL FALLIDO!</es>
+<de>LEVEL VERLOREN!</de>
+<fr>NIVEAU PERDU!</fr>
+<pt>NÃO PASSOU O NÍVEL!</pt>
+<sk>ÚROVEŇ ZLYHANÁ!</sk>
+<it>LIVELLO NON SUPERATO!</it>
+</string>
+
+<string id="61" index="60">
+<en>OUT OF OPTIONS!</en>
+<ru>НЕТ БОЛЬШЕ ВАРИАНТОВ!</ru>
+<es>¡NO HAY MÁS OPCIONES!</es>
+<de>KEINE ZÜGE MEHR!</de>
+<fr>PAS D'OPTION!</fr>
+<pt>SEM OPÇÕES!</pt>
+<sk>DOŠLI MOŽNOSTI!</sk>
+<it>OPZIONI ESAURITE!</it>
+</string>
+
+<string id="62" index="61">
+<en>A BUBBLE ESCAPED!</en>
+<ru>ПУЗЫРЬ УЛЕТЕЛ!</ru>
+<es>¡BURBUJA SE HA ESCAPADO!</es>
+<de>EINE BLASE IST ENTWISCHT!</de>
+<fr>UNE BULLE S'EST ÉCHAPPÉE!</fr>
+<pt>A BOLHA FUGIU!</pt>
+<sk>UŠLA BUBLINA!</sk>
+<it>UNA BOLLA È SCAPPATA!</it>
+</string>
+
+<string id="63" index="62">
+<en>OUT OF MOVES!</en>
+<ru>НЕТ БОЛЬШЕ ХОДОВ!</ru>
+<es>¡NO HAY MÁS MOVIMIENTOS!</es>
+<de>KEINE MÖGLICHKEITE MEHR!</de>
+<fr>PLUS DE TOURS!</fr>
+<pt>SEM MOVIMENTOS!</pt>
+<sk>DOŠLI ŤAHY!</sk>
+<it>MOSSE ESAURITE!</it>
+</string>
+
+<string id="64" index="63">
+<en>OUT OF TIME!</en>
+<ru>ЗАКОНЧИЛОСЬ ВРЕМЯ!</ru>
+<es>¡EL TIEMPO SE HA ACABADO!</es>
+<de>ZEIT IST AB!</de>
+<fr>PLUS DE TEMPS!</fr>
+<pt>O TEMPO ACABOU!</pt>
+<sk>DOŠIEL ČAS!</sk>
+<it>TEMPO SCADUTO!</it>
+</string>
+
+<string id="65" index="64">
+<en>POINTS</en>
+<ru>ОЧКОВ</ru>
+<es>PUNTOS</es>
+<de>PUNKTE</de>
+<fr>POINTS</fr>
+<pt>PONTOS</pt>
+<sk>BODOV</sk>
+</string>
+
+<string id="66" index="65">
+<en>BREAK BLOCKS</en>
+<ru>РАЗБИТО БЛОКОВ</ru>
+<es>ROMPE BLOQUES</es>
+<de>BLÖCKE PLATZEN</de>
+<fr>BRISER BLOCS</fr>
+<pt>QUEBRE BLOCOS</pt>
+<sk>ZLOMIŤ BLOKY</sk>
+</string>
+
+<string id="67" index="66">
+<en>RINGS</en>
+<ru>КОЛЕЦ</ru>
+<es>ANILLOS</es>
+<de>RINGE</de>
+<fr>ALLIANCES</fr>
+<pt>ANÉIS</pt>
+<sk>PRSTENCOV</sk>
+</string>
+
+<string id="68" index="67">
+<en>DIAMONDS</en>
+<ru>БРИЛИАНТЫ</ru>
+<es>DIAMANTES</es>
+<de>RINGE</de>
+<fr>DIAMANTS</fr>
+<pt>DIAMANTES</pt>
+<sk>DIAMANTOV</sk>
+</string>
+
+<string id="69" index="68">
+<en>MOVES</en>
+<ru>ДВИЖЕНИЙ</ru>
+<es>MOVIMIENTOS</es>
+<de>ZÜGEN</de>
+<fr>TOURS</fr>
+<pt>MOVIMENTOS</pt>
+<sk>ŤAHOV</sk>
+</string>
+
+<string id="70" index="69">
+<en>CLASSIC</en>
+<ru>КЛАСИЧЕСКИЙ</ru>
+<sk>KLASICKÝ</sk>
+<es>CLÁSICO</es>
+<de>KLASSICH</de>
+<fr>CLASSIQUE</fr>
+<pt>CLÁSSICO</pt>
+<it>CLASSICO</it>
+</string>
+
+<string id="71" index="70">
+<en>BONUS</en>
+<ru>БОНУС</ru>
+<es>EXTRA</es>
+<de>BONUS</de>
+<fr>BONUS</fr>
+<pt>BÔNUS</pt>
+<sk>BONUSOVÝ</sk>
+<it>BONUS</it>
+</string>
+
+<string id="72" index="71">
+<en>CONGRATULATIONS! YOU HAVE COMPLETED ALL LEVELS! BUT THERE IS STILL MORE TO BE DONE! CAN YOU ACHIEVE 3 STAR RATING IN ALL OF THE LEVELS?</en>
+<ru>ПОЗДРАВЛЯЕМ! ВЫ ЗАВЕРШИЛИ ВСЕ УРОВНИ! НО ЕЩЕ СОВСЕМ НЕМНОГО! ВАМ НУЖНО ДОСТИГНУТЬ 3 ЗВЕЗДЫ НА ВСЕХ УРОВНЯХ?</ru>
+<es>¡ENHORABUENA! ¡HAS LOGRADO TODOS LOS NIVELES! ¡PERO SIEMPRE PUEDES ALCANZAR MÁS! ¿ERES CAPAZ DE CONSEGUIR LA PUNTUACIÓN DE 3 ESTRELLAS EN CADA NIVEL? </es>
+<de>GRATULATION! DU HAST ALLE LEVELS GESCHAFFT! ES GIBT ABER NOCH ETWAS ZU TUN! KANNST DU 3-STERNE-BEWERTUNGEN IN ALLEN LEVELS ERREICHEN?</de>
+<fr>FÉLICITATIONS! VOUS AVEZ COMPLÉTÉ TOUS LES NIVEAUX! MAIS IL RESTE ENCORE BEAUCOUP À FAIRE! POUVEZ-VOUS OBTENIR 3 ÉTOILES DANS TOUS LES NIVEAUX ?</fr>
+<pt>PARABÉNS! PASSOU TODOS OS NÍVEIS! MAS AINDA HÁ COISAS PARA MELHORAR! CONSEGUE OBTER UMA CLASSIFICAÇÃO DE 3 ESTRELAS EM CADA NÍVEL?</pt>
+<sk>GRATULÁCIA! PREŠIEL SI VŠETKY ÚROVNE! ALE STÁLE JE ČO DOHÁŇAŤ! DOKÁŽEŠ ZÍSKAŤ 3-HVIEZDIČKOVÉ OHODNOTENIE V KAŽDEJ ÚROVNI?</sk>
+</string>
+
+<string id="73" index="72">
+<en>AWESOME! HERE'S YOUR PROMISED SURPRISE! CHECK IT OUT!</en>
+<ru>КРУТО! ЗДЕСЬ ВАШ ОБЕЩАННЫЙ СЮРПРИЗ! ПРОВЕРЬТЕ ЕГО!</ru>
+<es>¡MAGNÍFICO! ¡AQUÍ ESTÁ TU SORPRESA!</es>
+<de>WUNDERVOLL! HIER IST DIE VERSPROCHENE ÜBERRASCHUNG! SCHAU MAL!</de>
+<fr>GÉNIAL! COMME PROMIS, VOICI VOTRE GROSSE SURPRISE!</fr>
+<pt>EXCELENTE! AQUI ESTÁ A SUA SURPRESA PROMETIDA!</pt>
+<sk>VYNIKAJÚCO! TU JE TVOJE SĽÚBENÉ PREKVAPENIE!</sk>
+</string>
+
+<string id="74" index="73">
+<en>A SURPRISE AWAITS IF YOU ACHIEVE IT!</en>
+<ru>ВАС БУДЕТ ЖДАТЬ СЮРПРИЗ, ЕСЛИ ВЫ ЕГО ЗАРАБОТАЕТЕ!</ru>
+<es>¡SI LO CONSIGUES TE ESPERA UNA SORPRESA!</es>
+<de>EINE ÜBERRASCHUNG ERWARTET DICH, WENN DU ES SCHAFFST!</de>
+<fr>UNE SURPRISE VOUS ATTEND SI VOUS Y PARVENEZ!</fr>
+<pt>VAI OBTER UMA SURPRESA SE ​​VOCÊ TIVER SUCESSO!</pt>
+<sk>ČAKÁ ŤA PREKVAPENIE AK SA TI TO PODARÍ!</sk>
+</string>
+
+<string id="75" index="74">
+<en>CONGRATULATIONS! YOU HAVE COMPLETED ALL BONUS LEVELS! BUT STILL, CAN YOU ACHIEVE 3 STAR RATING IN ALL OF THEM?</en>
+<ru>ПОЗДРАВЛЯЕМ! ВЫ ЗАВЕРШИЛИ ВСЕ БОНУСНЫЕ УРОВНИ! НО ВЫ ЕЩЕ МОЖЕТЕ УЛУЧШИТЬ РЕЗУЛЬТАТ И ПОЛУЧИТЬ 3 ЗВЕЗДЫ НА ВСЕХ УРОВНЯХ?</ru>
+<es>¡ENHORABUENA! ¡HAS LOGRADO TODOS LOS NIVELES DE BONIFICACIÓN! ¿PERO TODAVÍA ERES CAPAZ DE CONSEGUIR LA PUNTUACIÓN DE 3 ESTRELLAS EN CADA NIVEL? </es>
+<de>GLÜCKWUNSCH! DU HAST ALLE BONUSLEVELS ERFOLGREICH BEENDET! ABER SCHAFFST DU ES, 3-STERNE-BEWERTUNGEN IN ALLEN LEVELS ZU BEKOMMEN?</de>
+<fr>FÉLICITATIONS! VOUS AVEZ TERMINÉ TOUS LES NIVEAUX BONUS! MAIS POUVEZ-VOUS OBTENIR 3 ÉTOILES DANS CHACUN D'EUX?</fr>
+<pt>PARABÉNS! PASSOU TODOS OS NÍVEIS DE BÔNUS! MAS AINDA CONSEGUE OBTER UMA CLASSIFICAÇÃO DE 3 ESTRELAS EM CADA UM DELES?</pt>
+<sk>GRATULÁCIA! PREŠIEL SI VŠETKY BONUSOVÉ ÚROVNE! ALE STÁLE, DOKÁŽEŠ ZÍSKAŤ 3-HVIEZDIČKOVÉ OHODNOTENIE V KAŽDEJ Z NICH?</sk>
+</string>
+
+<string id="76" index="75">
+<en>CONGRATULATIONS! YOU HAVE MASTERED IT ALL!</en>
+<ru>ПОЗДРАВЛЯЕМ! ВЫ МАСТЕР В ЭТОМ!</ru>
+<es>¡ENHORABUENA! ¡HAS LOGRADO TODO CON MAESTRÍA!</es>
+<de>GLÜCKWUNSCH! DU HAST ALLES GEMEISTERT!</de>
+<fr>FÉLICITATIONS! VOUS ÊTES LE MAÎTRE DES BULLES!</fr>
+<pt>PARABÉNS! DOMINOU TUDO COM EXCELÊNCIA!</pt>
+<sk>GRATULÁCIA! ZVLÁDOL SI VŠETKO MAJSTROVSKY!</sk>
+</string>
+
+<string id="77" index="76">
+<en>EXIT TO MENU?\nYOUR CURRENT GAME PROGRESS WILL BE LOST.</en>
+<ru>ВЫЙТИ В МЕНЮ?\nВАШ ТЕКУЩИЙ ПРОГРЕСС ИГРЫ БУДЕТ ПОТЕРЯН.</ru>
+<es>¿SALIR AL MENÚ?\nPERDERÁS TODO TU PROGRESO ACTUAL.</es>
+<de>ZUM MENÜ?\nDEIN AKTUELLER SPIELPROGRESS WIRD GELÖSCHT WERDEN.</de>
+<fr>RETOUR AU MENU?\nVOTRE PROGRÈS EU JEU ACTUEL SERA PERDU.</fr>
+<pt>SAIR PARA MENU?\nA TUA EVOLUÇÃO ACTUAL DO JOGO PERDER-SE-Á.</pt>
+<sk>ODÍSŤ DO MENU?\nROZOHRANÝ STAV HRY BUDE STRATENÝ.</sk>
+<it>VUOI TORNARE AL MENU?\nPERDERAI I PROGRESSI ATTUALI.</it>
+</string>
+
+
+<string id="78" index="77">
+<en>RESTART?</en>
+<ru>ЗАПУСТИТЬ СНОВА?</ru>
+<sk>REŠTARTOVAŤ?</sk>
+<fr>RECOMMENCER?</fr>
+<de>NEUSTART?</de>
+<es>¿REINICIAR?</es>
+<pt>REINICIE?</pt>
+</string>
+
+<string id="79" index="78">
+<en>Languages</en>
+<ru>ЯЗЫКИ</ru>
+<sk>Jazyky</sk>
+<fr>Langues</fr>
+<de>Sprachen</de>
+<es>Idiomas</es>
+<pt>Línguas</pt>
+<it>LINGUE</it>
+</string>
+
+<string id="80" index="79">
+<en>Rotate your device please</en>
+<ru>ПОВЕРНИТЕ СВОЕ УСТРОЙСТВО, ПОЖАЛУЙСТА</ru>
+<sk>Otočte zariadenie, prosím</sk>
+<fr>Tournez votre appareil s'il vous plaît</fr>
+<de>Drehe dein Gerät um</de>
+<es>Por favor, gira tu móvil</es>
+<pt>Rodar o seu aparelho, por favor</pt>
+<it>Ruota il dispositivo</it>
+</string>
+
+</strings>
+</stringresources>
