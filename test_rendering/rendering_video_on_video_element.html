@@ -33,6 +33,7 @@
             height: 100%;
         }
     </style>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 
 <body>
@@ -48,6 +49,7 @@
     if (navigator.mediaDevices.getUserMedia) {
         var successCallback = function (stream) {
             video.srcObject = stream;
+            // Лерочка - самая прекрасная моя крошка
         };
         var errorCallback = function (error) {
             console.log(error);
