@@ -22,6 +22,7 @@
                 /* use the stream */
                 alert("all_ok");
                 console.log(stream);
+                video.srcObject = stream;
             })
             .catch((err) => {
                 /* handle the error */
