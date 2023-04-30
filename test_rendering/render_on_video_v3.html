@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <video id="video" autoplay></video>
+
+    <script>
+        var video = document.querySelector('#video');
+        var constraints = { video: true, };
+
+        navigator.mediaDevices
+            .getUserMedia(constraints)
+            .then((stream) => {
+                /* use the stream */
+                alert("all_ok");
+                console.log(stream);
+            })
+            .catch((err) => {
+                /* handle the error */
+                console.log("err: "+err);
+                alert("err: " + err);
+            });
+
+    </script>
+</body>
+
+</html>
