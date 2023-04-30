@@ -16,6 +16,11 @@
         var video = document.querySelector('#video');
         var constraints = { video: true, };
 
+        video.addEventListener("error", () => {
+            console.error(`Error loading: ${videoSrc}`);
+            alert("Err with Video element");
+        });
+
         navigator.mediaDevices
             .getUserMedia(constraints)
             .then((stream) => {
@@ -26,9 +31,11 @@
             })
             .catch((err) => {
                 /* handle the error */
-                console.log("err: "+err);
+                console.log("err: " + err);
                 alert("err: " + err);
             });
+
+
 
     </script>
 </body>
