@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Styles go here */
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin-top: -2px;
+            margin-bottom: -2px;
+        }
+
+        #container {
+            width: 100%;
+            height: 100%;
+            transform: rotateY(180deg);
+            /* Safari and Chrome */
+            -webkit-transform: rotateY(180deg);
+            /* Firefox */
+            -moz-transform: rotateY(180deg);
+        }
+
+        #video {
+            display: none;
+        }
+
+        #canvas {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <video id="video" autoplay="true"></video>
+        <canvas id="canvas"></canvas>
+    </div>
+
+</body>
+<script>
+    // Code goes here
+
+    var video = document.getElementById('video');
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+
+    function calculateSize(srcSize, dstSize) {
+        var srcRatio = srcSize.width / srcSize.height;
+        var dstRatio = dstSize.width / dstSize.height;
+        if (dstRatio > srcRatio) {
+            return {
+                width: dstSize.height * srcRatio,
+                height: dstSize.height
+            };
+        } else {
+            return {
+                width: dstSize.width,
+                height: dstSize.width / srcRatio
+            };
+        }
+    }
+
+    function renderFrame() {
+        requestAnimationFrame(renderFrame);
+        canvas.width = canvas.scrollWidth;
+        canvas.height = canvas.scrollHeight;
+        if (video.readyState === video.HAVE_ENOUGH_DATA) {
+            var videoSize = { width: video.videoWidth, height: video.videoHeight };
+            var canvasSize = { width: canvas.width, height: canvas.height };
+            var renderSize = calculateSize(videoSize, canvasSize);
+            var xOffset = (canvasSize.width - renderSize.width) / 2;
+            context.drawImage(video, xOffset, 0, renderSize.width, renderSize.height);
+        }
+    }
+
+    if (navigator.mediaDevices.getUserMedia) {
+        var successCallback = function (stream) {
+            video.srcObject = stream;
+        };
+        var errorCallback = function (error) {
+            console.log(error);
+        };
+        navigator.mediaDevices.getUserMedia({
+            audio: false,
+            video: { facingMode: 'environment' }
+        }).then(successCallback, errorCallback);
+        requestAnimationFrame(renderFrame);
+    }
+</script>
+
+</html>
