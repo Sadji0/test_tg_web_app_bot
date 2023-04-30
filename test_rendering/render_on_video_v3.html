@@ -11,7 +11,8 @@
 
 <body>
 
-    <video id="video" autoplay></video>
+    <video id="video"></video>
+    <button onclick="tapButton()"> tap to play</button>
     <canvas id="canv_vid"></canvas>
 
     <script>
@@ -22,6 +23,10 @@
             console.error(`Error loading: ${videoSrc}`);
             alert("Err with Video element");
         });
+
+        function tapButton() {
+            video.play();
+        }
 
         navigator.mediaDevices
             .getUserMedia(constraints)
